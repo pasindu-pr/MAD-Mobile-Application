@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name"> DayCare</string>
+    <string name="NewCustomer">Yes I am a rand new Customer</string>
+    <string name="oldcustomer">No , I\'ve Been to  ...    Before</string>
+    <string name="text1">We looking through all of our files and it doesn\'t look like we ave any records associated with that email address</string>
+    <string name="text2">New To .......  DayCare?</string>
+    <string name="text3">Which of the following apply to you</string>
+    <string name="text4">Need help Contact Us</string>
+    <string name="daycare_btn2">Monthly Memberships</string>
+    <string name="daycare_btn3">Singal day Daycare</string>
+    <string name="text5">Note :  For daycare services, any dog over 8 month             old must be spayed or neutered.</string>
+    <string name="text6">Package 01</string>
+    <string name="text7">"   4 day/month                 $31/day"</string>
+    <string name="text8">Package 02</string>
+    <string name="text9">"    8 day/month                 $29/day"</string>
+    <string name="text10">Package 03</string>
+    <string name="text11">"   12 day/month                    $27/day"</string>
+    <string name="text12">"Unlimited Membership    $480/months    "</string>
+    <string name="text13">"Membership customer receive $4 discount on boarding, $5 discount on nail trims , and 10% off baths  "</string>
+    <string name="text14">Request a Booking</string>
+    <string name="text15">Ready to bring your puppy in from daycare?</string>
+    <string name="text16">About Dog</string>
+    <string name="text17">Dog Name</string>
+    <string name="plainText1" />
+    <string name="title_home">Home</string>
+    <string name="Topic">Request A Booking</string>
+    <string name="SubTopic">Ready to bring your puppy in from daycare?</string>
+    <string name="Update_btn">Change Booking</string>
+    <string name="delete_btn">Delete Booking</string>
+    <string name="Bill">Your Bill</string>
+    <string name="Update_chng">Change Booking</string>
+    <string name="Add_booking">Add Booking</string>
+    <string name="Update_Topic">Change Booking</string>
+    <string name="Delete_Topic">Delete Booking</string>
+    <string name="Delete_chnge">Delete Booking</string>
+    <string name="thnk_msg">Thank You For Your Booking</string>
+    <string name="bill_back">Back To  Booking</string>
+
+
+</resources>

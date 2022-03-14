@@ -1,0 +1,36 @@
+package com.example.dogapp;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button button1;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ActionBar actionBar1 = getSupportActionBar();
+        actionBar1.setTitle("Day Care");
+        actionBar1.setDisplayShowHomeEnabled(true);
+        actionBar1.setDisplayHomeAsUpEnabled(true);
+
+
+        button1 = findViewById(R.id.button1);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(getApplicationContext(), Day_Care.class);
+                startActivity(intent1);
+            }
+        });
+
+    }
+}
