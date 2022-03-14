@@ -1,4 +1,4 @@
-package com.example.dogapp;
+package com.mobileapplicationdevelopment.dogvio;
 
 import androidx.appcompat.app.AppCompatActivity;
 
