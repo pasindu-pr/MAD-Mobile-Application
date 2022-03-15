@@ -10,34 +10,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
-            android:name="com.mobileapplicationdevelopment.dogvio.Delete_Booking"
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Delete_Booking"
             android:exported="false" />
         <activity
-            android:name="com.mobileapplicationdevelopment.dogvio.ContactUs_Page"
+            android:name=".ContactUs_Page"
             android:exported="false" />
         <activity
-            android:name="com.mobileapplicationdevelopment.dogvio.Add_Bill"
+            android:name=".Add_Bill"
             android:exported="false" />
         <activity
-            android:name="com.mobileapplicationdevelopment.dogvio.Update_Booking"
+            android:name=".Update_Booking"
             android:exported="false" />
         <activity
-            android:name="com.mobileapplicationdevelopment.dogvio.DisplayBooking"
+            android:name=".DisplayBooking"
             android:exported="false" />
         <activity
-            android:name="com.mobileapplicationdevelopment.dogvio.Booking_DayCare"
+            android:name=".Booking_DayCare"
             android:exported="false" />
         <activity
-            android:name="com.mobileapplicationdevelopment.dogvio.Monthly_Memberships"
+            android:name=".Monthly_Memberships"
             android:exported="false" />
         <activity
-            android:name="com.mobileapplicationdevelopment.dogvio.Old_Customer"
+            android:name=".Old_Customer"
             android:exported="false" />
         <activity
-            android:name="com.mobileapplicationdevelopment.dogvio.Day_Care"
+            android:name=".Day_Care"
             android:exported="false" />
         <activity
-            android:name="com.mobileapplicationdevelopment.dogvio.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,6 +48,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

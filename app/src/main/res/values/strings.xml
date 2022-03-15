@@ -37,4 +37,16 @@
     <string name="bill_back">Back To  Booking</string>
 
 
+    <!--    Social Part Strings  -->
+    <string name="homepage_main_text">Do not hesitate to adopt a dog!</string>
+    <string name="get_started_button"> Get Started </string>
+    <string name="homepage_first_description"> Welcome to Dogvio. This is an app which help you to manage your
+    dogs healthcare, find partners and find day cares for your dog.</string>
+    <string name="homepage_second_description">
+        By pressing get started button you are agreeing to our terms and conditions.
+    </string>
+
+    <string name="homepage_getstarted_button"> Get Started </string>
+    <string name="homepage_dog_image"> Dog Image </string>
+
 </resources>
