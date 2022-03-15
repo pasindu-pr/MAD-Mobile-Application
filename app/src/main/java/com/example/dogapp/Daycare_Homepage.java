@@ -8,13 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Daycare_Homepage extends AppCompatActivity {
 
     Button button1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.daycare_homepage);
 
         ActionBar actionBar1 = getSupportActionBar();
         actionBar1.setTitle("Day Care");
