@@ -37,7 +37,7 @@
             android:name=".Day_Care"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Daycare_Homepage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

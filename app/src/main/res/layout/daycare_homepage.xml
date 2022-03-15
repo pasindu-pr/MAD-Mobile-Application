@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Daycare_Homepage"
     android:background="@drawable/dog10">
     >
 
@@ -12,9 +12,8 @@
         android:id="@+id/button1"
         android:layout_width="279dp"
         android:layout_height="66dp"
-        android:background="#ff711f"
         android:text="Day Care"
-
+        android:background="@drawable/button_drawable"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

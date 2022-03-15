@@ -11,6 +11,7 @@ import android.widget.Button;
 public class Old_Customer extends AppCompatActivity {
 
  Button button3;
+ Button button3_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +25,21 @@ public class Old_Customer extends AppCompatActivity {
 
 
         button3 = findViewById(R.id.button);
+        button3_1 = findViewById(R.id.button2);
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent3 = new Intent(getApplicationContext(), Monthly_Memberships.class);
                 startActivity(intent3);
+            }
+        });
+
+        button3_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent4 = new Intent(getApplicationContext(), Monthly_Memberships.class);
+                startActivity(intent4);
             }
         });
 
