@@ -4,12 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/drawable/button_drawable.xml" value="0.2265" />
+        <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/drawable/rouded_input.xml" value="0.1" />
+        <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/drawable/rouded_ractangle_background.xml" value="0.1" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/drawable/rounded_button.xml" value="0.2265" />
+        <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/drawable/social_rouded_ractangle_background.xml" value="0.1" />
+        <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/drawable/social_rounded_button_purple.xml" value="0.1" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/font/.xml" value="0.11757161179991449" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/font/open_sans_semibold.xml" value="0.2334330910645575" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_add_bill.xml" value="0.22826086956521738" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_display_booking.xml" value="0.22826086956521738" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_login_page.xml" value="0.20863616930312098" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_monthly_memberships.xml" value="0.22826086956521738" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_old_customer.xml" value="0.22826086956521738" />

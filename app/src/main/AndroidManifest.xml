@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".LoginPage"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true">
+
+            <!-- Make Home Activity as the home page -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,9 +52,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
