@@ -67,6 +67,16 @@
     <string name="puppuy_name"> Puppy Taby </string>
     <string name="social_puppuy_category"> French Black Puppy </string>
     <string name="social_puppy_call_owner"> Call Owner </string>
+    <string name="social_dog_breed_label"> Breed </string>
+    <string name="social_dog_age_label"> Age </string>
+    <string name="social_dog_age"> 7 </string>
+    <string name="social_dog_color"> Black </string>
+    <string name="social_dog_color_label"> Colour </string>
+    <string name="dog_gender_label"> Gender </string>
+    <string name="dog_gender"> Male </string>
+    <string name="social_dog_description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </string>
 
     <string name="social_add_your_dog_headline"> Add your dog </string>
     <string name="social_add_your_dog_small_description"> Add your dog to the community.
@@ -94,5 +104,6 @@ So We will display hime to the others! </string>
     <string name="social_add_form_dog_image_label_hint"> Image Link </string>
 
     <string name="add_dog_submit_button"> Add Dog </string>
+    <string name="socialbackButtonImage">Back Button</string>
 
 </resources>
