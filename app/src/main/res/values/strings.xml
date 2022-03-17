@@ -62,4 +62,8 @@
     <string name="go_to_login_text"> Have an account? Click here to login</string>
     <string name="username_input"> Your Name</string>
     <string name="register_button"> Register </string>
+    <string name="social_dogs_partners"> Partners </string>
+    <string name="social_dogs_partners_close_text"> Partners close to you </string>
+    <string name="puppuy_name"> Puppy Taby </string>
+    <string name="social_puppuy_category"> French Black Puppy </string>
 </resources>

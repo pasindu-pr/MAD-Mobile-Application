@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".Social_DogsList"
+            android:exported="true" />
+        <activity
             android:name=".RegistrationPage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LoginPage"
             android:exported="true" />
