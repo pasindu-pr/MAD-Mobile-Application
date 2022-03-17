@@ -57,4 +57,9 @@
     <string name="login_page_labels_password_hint">Enter Your Password</string>
     <string name="login_button"> Login </string>
     <string name="login_page_not_registered_text"> Do not have an account as yet? Click here to register </string>
+    <string name="register_page_title"> Register </string>
+    <string name="enter_registration_credentials_text"> Enter your details to register for the application</string>
+    <string name="go_to_login_text"> Have an account? Click here to login</string>
+    <string name="username_input"> Your Name</string>
+    <string name="register_button"> Register </string>
 </resources>
