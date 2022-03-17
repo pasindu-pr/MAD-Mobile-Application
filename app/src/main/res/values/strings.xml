@@ -36,6 +36,15 @@
     <string name="thnk_msg">Thank You For Your Booking</string>
     <string name="bill_back">Back To  Booking</string>
     <string name="bill_payment">Back To Booking</string>
+    <string name="doc_page1_btn">Lets Start</string>
+    <string name="doc_page1_disc">Until one has loved an animal, a part of one\'s soul remains unawakened</string>
+    <string name="tv_ourdoctors">Our Doctors</string>
+    <string name="doc_name1">DR Rayen</string>
+    <string name="see_more_1">Book Now</string>
+    <string name="doc_name2">DR Chaan</string>
+    <string name="see_more2">Book Now</string>
+    <string name="doc_name3">DR Saam</string>
+    <string name="see_more_3">BOOK NOW</string>
 
 
 </resources>
