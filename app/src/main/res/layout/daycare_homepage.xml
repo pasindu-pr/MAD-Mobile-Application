@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Daycare_Homepage"
-    android:background="@drawable/dog10">
+    android:background="@drawable/dog10"
+    tools:context=".Daycare_Homepage">
     >
 
     <Button
         android:id="@+id/button1"
         android:layout_width="279dp"
         android:layout_height="66dp"
-        android:text="Day Care"
         android:background="@drawable/button_drawable"
+        android:text="Day Care"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,5 +21,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.882" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="263dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="112dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

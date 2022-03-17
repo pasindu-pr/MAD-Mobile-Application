@@ -35,7 +35,7 @@
         android:id="@+id/textView5"
         android:layout_width="353dp"
         android:layout_height="79dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="144dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/text5"
         android:textAlignment="center"

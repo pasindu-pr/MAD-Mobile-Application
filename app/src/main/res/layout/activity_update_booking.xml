@@ -6,12 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".Booking_DayCare">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="421dp"
+        android:layout_height="94dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_wave__2_" />
+
     <TextView
         android:id="@+id/textView20"
         android:layout_width="294dp"
         android:layout_height="54dp"
         android:layout_marginTop="16dp"
         android:text="@string/Update_Topic"
+        android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -25,6 +36,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/SubTopic"
+        android:textColor="#0C0C0C"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,12 +125,12 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="142dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="261dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_drawable"
         android:text="@string/Update_chng"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
 

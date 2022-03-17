@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".Calculator"
+            android:exported="false" />
+        <activity
             android:name=".Delete_Booking"
             android:exported="false" />
         <activity
             android:name=".ContactUs_Page"
-            android:exported="false" />
-        <activity
-            android:name=".Add_Bill"
             android:exported="false" />
         <activity
             android:name=".Update_Booking"

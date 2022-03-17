@@ -49,7 +49,7 @@ public class DisplayBooking extends AppCompatActivity {
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent9 = new Intent(getApplicationContext(), Add_Bill.class);
+                Intent intent9 = new Intent(getApplicationContext(), Calculator.class);
                 startActivity(intent9);
 
             }

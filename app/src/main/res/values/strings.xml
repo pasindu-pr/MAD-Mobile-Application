@@ -7,7 +7,7 @@
     <string name="text3">Which of the following apply to you</string>
     <string name="text4">Need help Contact Us</string>
     <string name="daycare_btn2">Monthly Memberships</string>
-    <string name="daycare_btn3">Singal day Daycare</string>
+    <string name="daycare_btn3">Single day  </string>
     <string name="text5">Note :  For daycare services, any dog over 8 month             old must be spayed or neutered.</string>
     <string name="text6">Package 01</string>
     <string name="text7">"   4 day/month                 $31/day"</string>
@@ -15,7 +15,6 @@
     <string name="text9">"    8 day/month                 $29/day"</string>
     <string name="text10">Package 03</string>
     <string name="text11">"   12 day/month                    $27/day"</string>
-    <string name="text12">"Unlimited Membership    $480/months    "</string>
     <string name="text13">"Membership customer receive $4 discount on boarding, $5 discount on nail trims , and 10% off baths  "</string>
     <string name="text14">Request a Booking</string>
     <string name="text15">Ready to bring your puppy in from daycare?</string>
@@ -36,6 +35,22 @@
     <string name="thnk_msg">Thank You For Your Booking</string>
     <string name="bill_back">Back To  Booking</string>
     <string name="bill_payment">Back To Booking</string>
-
-
+    <string name="text18">Package5</string>
+    <string name="text19">Package 5</string>
+    <string name="text20">Package 07</string>
+    <string name="text21">Package 06</string>
+    <string name="cal_topic">Package Calculator</string>
+    <string name="amount">Total Amount</string>
+    <string name="cal_button">Calculate</string>
+    <string name="back">Back To Home</string>
+    <string name="text12">Package 04</string>
+    <string name="go_cal">Go To Calculator</string>
+    <string name="Next">Next</string>
+    <string name="packag">Package No</string>
+    <string name="no_hor">No Of Hours</string>
+    <string name="no_day">No Of Dates</string>
+    <string name="pack_no">Package No</string>
+    <string name="radio1">Package 01</string>
+    <string name="radio2">Package 02</string>
+    <string name="cal_butn1">Calculator</string>
 </resources>

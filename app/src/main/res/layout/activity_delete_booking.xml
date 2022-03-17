@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Delete_Booking">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="433dp"
+        android:layout_height="94dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_wave__2_" />
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="298dp"
@@ -14,6 +23,7 @@
         android:fontFamily="sans-serif-condensed"
         android:text="@string/Delete_Topic"
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -104,12 +114,13 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="142dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="264dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_drawable"
         android:text="@string/delete_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
 
