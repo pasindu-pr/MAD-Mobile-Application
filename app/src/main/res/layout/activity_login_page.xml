@@ -74,6 +74,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
+            android:autofillHints=""
             android:background="@drawable/social_rouded_input"
             android:ems="10"
             android:hint="@string/login_page_labels_emailhint"
@@ -81,8 +82,10 @@
             android:minHeight="48dp"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
+            android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:textColor="@color/purple_500"
+            android:textColorHint="#546E7A"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/emailLabel" />
@@ -110,6 +113,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
+            android:autofillHints=""
             android:background="@drawable/social_rouded_input"
             android:ems="10"
             android:hint="@string/login_page_labels_password_hint"
@@ -117,8 +121,10 @@
             android:minHeight="48dp"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
+            android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:textColor="@color/purple_500"
+            android:textColorHint="#546E7A"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordLabel" />
@@ -138,7 +144,8 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginPagePasswordInput" />
+            app:layout_constraintTop_toBottomOf="@+id/loginPagePasswordInput"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
         <TextView
             android:id="@+id/notRegisteredText"
