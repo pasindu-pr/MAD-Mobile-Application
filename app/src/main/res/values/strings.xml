@@ -112,4 +112,12 @@ So We will display hime to the others! </string>
 edit or remove your puppy
     </string>
 
+    <string name="navbar_title">
+        Choose where you wanna go!
+    </string>
+
+    <string name="healthcare">Healthcare</string>
+    <string name="doctor_booking">Doctor Booking</string>
+    <string name="daycare">Daycare</string>
+    <string name="findpets">Find Pets</string>
 </resources>
