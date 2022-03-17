@@ -106,4 +106,10 @@ So We will display hime to the others! </string>
     <string name="add_dog_submit_button"> Add Dog </string>
     <string name="socialbackButtonImage">Back Button</string>
 
+    <string name="social_user_dog_list_headline"> Pets On Board </string>
+    <string name="social_user_dog_list_description">
+        Here are your puppies. Click on the icons to
+edit or remove your puppy
+    </string>
+
 </resources>

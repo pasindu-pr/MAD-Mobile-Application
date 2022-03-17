@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".social_user_doglist"
+            android:exported="true" />
+        <activity
             android:name=".Social_AddDog"
             android:exported="true" />
         <activity
