@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_Details_Update"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_MealList_Add"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_MealList_Modify"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_MealList"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_Details"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_BMI"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_Welcome"
+            android:exported="false" />
+        <activity
             android:name=".Delete_Booking"
             android:exported="false" />
         <activity
@@ -36,15 +60,6 @@
         <activity
             android:name=".Day_Care"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
