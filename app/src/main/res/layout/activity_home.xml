@@ -75,9 +75,11 @@
             android:layout_marginEnd="14dp"
             android:background="@drawable/rounded_button"
             android:fontFamily="@font/open_sans"
+            android:onClick="onGetStartedButtonClick"
             android:text="@string/homepage_getstarted_button"
             android:textColor="@color/purple_500"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <TextView

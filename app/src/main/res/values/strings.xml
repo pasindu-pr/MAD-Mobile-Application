@@ -117,7 +117,9 @@ edit or remove your puppy
     </string>
 
     <string name="healthcare">Healthcare</string>
-    <string name="doctor_booking">Doctor Booking</string>
+    <string name="doctor_booking">Doctor Channeling</string>
     <string name="daycare">Daycare</string>
     <string name="findpets">Find Pets</string>
+    <string name="username">Hey, Pasindu</string>
+    <string name="socialized_pets">Your pets on social</string>
 </resources>
