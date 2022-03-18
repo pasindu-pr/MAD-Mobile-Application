@@ -45,6 +45,12 @@
     <string name="see_more2">Book Now</string>
     <string name="doc_name3">DR Saam</string>
     <string name="see_more_3">BOOK NOW</string>
+    <string name="doc_page4_text1">Doctor Name :-</string>
+    <string name="doc_page4_text2a">20 May 2022</string>
+    <string name="doc_page4_text3a">9.15a.m</string>
+    <string name="doc_page4_btn1">OK</string>
+    <string name="doc_page4_btn2">EDIT</string>
+    <string name="doc_page4_btn3">DELETE</string>
 
 
 </resources>

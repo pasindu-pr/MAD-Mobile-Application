@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".Doctor_Booking_Delete_page"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_Time_Picking_data_page"
+            android:exported="true" />
+        <activity
+            android:name=".Doctor_Time_Picking_page"
+            android:exported="false" />
+        <activity
             android:name=".Doctor_Booking_Select_Page"
             android:exported="false" />
         <activity
@@ -41,7 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".Day_Care"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Daycare_Homepage"
             android:exported="true">
