@@ -16,9 +16,6 @@
             android:name=".Delete_Booking"
             android:exported="false" />
         <activity
-            android:name=".ContactUs_Page"
-            android:exported="false" />
-        <activity
             android:name=".Update_Booking"
             android:exported="false" />
         <activity
