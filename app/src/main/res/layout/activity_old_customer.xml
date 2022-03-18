@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="235dp"
-        android:layout_height="59dp"
+        android:layout_width="284dp"
+        android:layout_height="58dp"
         android:layout_marginTop="204dp"
         android:background="@drawable/button_drawable"
         android:text="@string/daycare_btn2"
@@ -21,8 +21,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="235dp"
-        android:layout_height="54dp"
+        android:layout_width="289dp"
+        android:layout_height="51dp"
         android:layout_marginTop="92dp"
         android:background="@drawable/button_drawable"
         android:text="@string/daycare_btn3"
