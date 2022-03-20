@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/DogApp2/app/src/main/res/drawable-v24/border1.xml" value="0.2595" />
+        <entry key="..\:/DogApp2/app/src/main/res/drawable-v24/button_drawable1.xml" value="0.2595" />
         <entry key="..\:/DogApp2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.158" />
         <entry key="..\:/DogApp2/app/src/main/res/drawable/border.xml" value="0.2595" />
+        <entry key="..\:/DogApp2/app/src/main/res/drawable/button_d.xml" value="0.2595" />
         <entry key="..\:/DogApp2/app/src/main/res/drawable/button_drawable.xml" value="0.2445" />
         <entry key="..\:/DogApp2/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.158" />
         <entry key="..\:/DogApp2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.158" />
@@ -12,6 +15,7 @@
         <entry key="..\:/DogApp2/app/src/main/res/drawable/ic_wave__2_.xml" value="0.18" />
         <entry key="..\:/DogApp2/app/src/main/res/layout/activity_add_bill.xml" value="0.264" />
         <entry key="..\:/DogApp2/app/src/main/res/layout/activity_booking_day_care.xml" value="0.264" />
+        <entry key="..\:/DogApp2/app/src/main/res/layout/activity_button_page.xml" value="0.25416666666666665" />
         <entry key="..\:/DogApp2/app/src/main/res/layout/activity_calculator.xml" value="0.25416666666666665" />
         <entry key="..\:/DogApp2/app/src/main/res/layout/activity_contact_us_page.xml" value="0.264" />
         <entry key="..\:/DogApp2/app/src/main/res/layout/activity_day_care.xml" value="0.264" />

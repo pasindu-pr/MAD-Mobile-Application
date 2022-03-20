@@ -27,7 +27,7 @@ public class Daycare_Homepage extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(getApplicationContext(), Day_Care.class);
+                Intent intent1 = new Intent(getApplicationContext(), Old_Customer.class);
                 startActivity(intent1);
             }
         });
