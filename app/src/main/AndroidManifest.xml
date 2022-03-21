@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".Doctor_Appoinment_payment"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_delete_popup_msg"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_Time_Picking_data_page"
+            android:exported="true" />
+        <activity
+            android:name=".Doctor_Time_Picking_page"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_Booking_Select_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_Booking_main"
+            android:exported="true" />
+        <activity
             android:name=".Delete_Booking"
             android:exported="false" />
         <activity
@@ -35,7 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".Day_Care"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Daycare_Homepage"
             android:exported="true">
@@ -45,6 +63,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

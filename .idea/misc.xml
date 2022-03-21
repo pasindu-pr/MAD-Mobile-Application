@@ -3,6 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/drawable/doc_background.xml" value="0.13" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/drawable/doc_text_back.xml" value="0.133" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/drawable/docbuttonbackground.xml" value="0.1" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/drawable/doccustombtn.xml" value="0.147" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/drawable/docpopupbackground.xml" value="0.1" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/drawable/ic_docwave.xml" value="0.18" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/activity_day_care.xml" value="0.20416666666666666" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/activity_display_booking.xml" value="0.20416666666666666" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/activity_doctor_appoinment_payment.xml" value="0.11" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/activity_doctor_booking_delete_page.xml" value="0.13243243243243244" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/activity_doctor_booking_main.xml" value="0.16" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/activity_doctor_booking_select_page.xml" value="0.22" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/activity_doctor_delete_popup_msg.xml" value="0.2" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/activity_doctor_time_picking_data_page.xml" value="0.2" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/activity_doctor_time_picking_page.xml" value="0.18" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/daycare_homepage.xml" value="0.20416666666666666" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/doctor_delete_popup.xml" value="0.16" />
         <entry key="..\:/DogApp2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.158" />
         <entry key="..\:/DogApp2/app/src/main/res/drawable/button_drawable.xml" value="0.2445" />
         <entry key="..\:/DogApp2/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.158" />
