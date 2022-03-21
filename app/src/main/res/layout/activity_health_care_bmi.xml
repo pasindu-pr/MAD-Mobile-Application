@@ -5,7 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/healthbmi"
-    tools:context=".HealthCare_BMI">
+    tools:context=".HealthCare_BMI"
+    tools:layout_editor_absoluteX="29dp"
+    tools:layout_editor_absoluteY="2dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="337dp"
+        android:layout_height="468dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@drawable/border"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/topic_bmi"
@@ -94,11 +109,11 @@
         android:id="@+id/btn_bmicalc"
         android:layout_width="275dp"
         android:layout_height="54dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/button_drawable"
         android:text="@string/btn_bmicalc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bmi_height" />
 

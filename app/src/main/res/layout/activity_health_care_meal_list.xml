@@ -28,7 +28,8 @@
         android:background="@drawable/button_drawable"
         android:text="@string/btn_1stmeal"
         app:layout_constraintBottom_toBottomOf="@+id/meal_1"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/meal_2"
@@ -53,7 +54,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/meal_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_1stmeal"
-        app:layout_constraintVertical_bias="0.858" />
+        app:layout_constraintVertical_bias="0.858"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btn_updatemeal"

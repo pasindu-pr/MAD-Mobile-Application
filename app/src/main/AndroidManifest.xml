@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".HealthCare_Details_Update"
             android:exported="false" />
         <activity
@@ -32,7 +29,15 @@
             android:exported="false" />
         <activity
             android:name=".HealthCare_Welcome"
-            android:exported="false" />
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Delete_Booking"
             android:exported="false" />
