@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
-            android:name=".Doctor_Booking_Delete_page"
+            android:name=".Doctor_Appoinment_payment"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_delete_popup_msg"
             android:exported="false" />
         <activity
             android:name=".Doctor_Time_Picking_data_page"

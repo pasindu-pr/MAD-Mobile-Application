@@ -1,5 +1,6 @@
 package com.example.dogapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,6 +14,12 @@ public class Doctor_Booking_main extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_booking_main);
+
+        ActionBar DocActionBar1 = getSupportActionBar();
+        DocActionBar1.setTitle("Doctor Booking");
+        DocActionBar1.setDisplayShowHomeEnabled(true);
+        DocActionBar1.setDisplayHomeAsUpEnabled(true);
+
 
         Button button_d1 = findViewById(R.id.doc_page1_btn);
 

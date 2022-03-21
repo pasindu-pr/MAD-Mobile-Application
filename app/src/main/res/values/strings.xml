@@ -51,6 +51,15 @@
     <string name="doc_page4_btn1">OK</string>
     <string name="doc_page4_btn2">EDIT</string>
     <string name="doc_page4_btn3">DELETE</string>
+    <string name="doc_dog_count_1">How many Dogs are Visiting :-</string>
+    <string name="doc_dog_counts">x</string>
+    <string name="doc_dog_count">1</string>
+    <string name="doc_dog_counta1" />
+    <string name="doc_page4_text4">Dog count :</string>
+    <string name="doc_page4_text4a">1</string>
+    <string name="docpaymentbtna">PAY</string>
+    <string name="docpayment">700</string>
+    />
 
 
 </resources>

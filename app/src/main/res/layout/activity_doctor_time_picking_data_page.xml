@@ -10,8 +10,8 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout4"
-        android:layout_width="409dp"
-        android:layout_height="420dp"
+        android:layout_width="408dp"
+        android:layout_height="395dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         android:background="@drawable/ic_docwave"
@@ -37,12 +37,12 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="395dp"
-            android:layout_height="372dp"
+            android:layout_width="wrap_content"
+            android:layout_height="337dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="14dp"
-            android:layout_marginBottom="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="9dp"
             app:srcCompat="@drawable/docter6" />
 
     </RelativeLayout>
@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="8dp"
         android:text="@string/doc_page4_text1"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -131,6 +131,20 @@
         app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toEndOf="@+id/doc_page4_text3" />
 
+    <TextView
+        android:id="@+id/doc_page4_text3a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="@string/doc_page4_text3a"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/doc_page4_text3a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toEndOf="@+id/doc_page4_text3" />
+
     <Button
         android:id="@+id/doc_page4_btn1"
         android:layout_width="wrap_content"
@@ -157,15 +171,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_drawable"
         android:text="@string/doc_page4_btn3"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/doc_page4_btn2"
-        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/doc_page4_text3"
-        app:layout_constraintVertical_bias="0.155" />
+        app:layout_constraintTop_toBottomOf="@+id/doc_page4_text4" />
+
+    <TextView
+        android:id="@+id/doc_page4_text4"
+        android:layout_width="126dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/doc_page4_text4"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc_page4_text3" />
+
+    <TextView
+        android:id="@+id/doc_page4_text4a"
+        android:layout_width="98dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/doc_page4_text4a"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/doc_page4_text4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/doc_page4_text4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

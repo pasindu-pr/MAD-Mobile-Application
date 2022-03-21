@@ -1,6 +1,7 @@
 package com.example.dogapp;
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
@@ -34,12 +35,17 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         timeButton = findViewById(R.id.timeButton);
         dateButton.setText(getTodaysDate());
         setContentView(R.layout.activity_doctor_time_picking_page);
+
+        ActionBar DocActionBar6 = getSupportActionBar();
+        DocActionBar6.setTitle("Place Appointment");
+        DocActionBar6.setDisplayShowHomeEnabled(true);
+        DocActionBar6.setDisplayHomeAsUpEnabled(true);
     }
 
 
 
 
-   private String getTodaysDate()
+    private String getTodaysDate()
     {
         Calendar cal = Calendar.getInstance();
         int year = cal.get(Calendar.YEAR);
