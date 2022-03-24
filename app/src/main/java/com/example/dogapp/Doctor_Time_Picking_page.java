@@ -25,6 +25,13 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
     private Button dateButton;
     private Bundle savedInstanceState;
 
+    private Button saveButton;
+
+    private void gotoanotherpage() {
+        Intent intent = new Intent(this, Doctor_Time_Picking_data_page.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -35,6 +42,16 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         timeButton = findViewById(R.id.timeButton);
         dateButton.setText(getTodaysDate());
         setContentView(R.layout.activity_doctor_time_picking_page);
+
+        saveButton =  findViewById(R.id.date_time_save_button);
+
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoanotherpage();
+            }
+        });
+
 
         ActionBar DocActionBar6 = getSupportActionBar();
         DocActionBar6.setTitle("Place Appointment");
