@@ -32,6 +32,8 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    //-------------------------------------------------------------------------------------------------------------------------
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -59,7 +61,7 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         DocActionBar6.setDisplayHomeAsUpEnabled(true);
     }
 
-
+//-----------------------------------------------------------------------------------------------------------------------------------
 
 
     private String getTodaysDate()
@@ -93,7 +95,7 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         int style = AlertDialog.THEME_HOLO_LIGHT;
 
         datePickerDialog = new DatePickerDialog(this, style, dateSetListener, year, month, day);
-        datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
+        datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
 
     }
 
