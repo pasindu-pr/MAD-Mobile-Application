@@ -53,4 +53,6 @@
     <string name="radio1">Package 01</string>
     <string name="radio2">Package 02</string>
     <string name="cal_butn1">Calculator</string>
+    <string name="radio3">Package 03</string>
+    <string name="radio4">Package 04</string>
 </resources>

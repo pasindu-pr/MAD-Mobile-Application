@@ -16,7 +16,7 @@ public class Calculator extends AppCompatActivity {
         setContentView(R.layout.activity_calculator);
 
         ActionBar actionBar9= getSupportActionBar();
-        actionBar9.setTitle("Display Booking");
+        actionBar9.setTitle("Calculator");
         actionBar9.setDisplayShowHomeEnabled(true);
         actionBar9.setDisplayHomeAsUpEnabled(true);
 
