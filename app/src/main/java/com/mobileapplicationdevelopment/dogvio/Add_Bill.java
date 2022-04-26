@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Add_Bill extends AppCompatActivity {
-   Button button9;
+    Button button9;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +25,19 @@ public class Add_Bill extends AppCompatActivity {
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent9 = new Intent(getApplicationContext(), ContactUs_Page.class);
+                Intent intent9 = new Intent(getApplicationContext(), Old_Customer.class);
                 startActivity(intent9);
             }
         });
     }
 }
+
+
+
+
+
+
+
+
+
+

@@ -35,6 +35,7 @@
     <string name="Delete_chnge">Delete Booking</string>
     <string name="thnk_msg">Thank You For Your Booking</string>
     <string name="bill_back">Back To  Booking</string>
+    <string name="bill_payment">Back To Booking</string>
 
 
     <!--    Social Part Strings  -->

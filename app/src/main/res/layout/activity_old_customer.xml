@@ -23,12 +23,11 @@
         android:id="@+id/button2"
         android:layout_width="235dp"
         android:layout_height="54dp"
-        android:layout_marginTop="76dp"
-        android:background="@drawable/social_button_drawable"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/button_drawable"
         android:text="@string/daycare_btn3"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
