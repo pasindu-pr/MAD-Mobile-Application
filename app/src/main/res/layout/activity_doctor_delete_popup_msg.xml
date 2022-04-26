@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout5"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:background="@drawable/docpopupbackground">
+
+    <ImageView
+        android:id="@+id/doc_delete_popup_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/doctorpopupimg"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/doc_delete_popup_text"
+        android:layout_width="156dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:text="Are you sure ?"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc_delete_popup_img" />
+
+    <Button
+        android:id="@+id/docpopupyes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/button_drawable"
+        android:text="NO"
+        app:layout_constraintBaseline_toBaselineOf="@+id/docpopupno"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/docpopupno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_drawable"
+        android:text="YES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/docpopupyes1"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,6 +36,30 @@
     <string name="thnk_msg">Thank You For Your Booking</string>
     <string name="bill_back">Back To  Booking</string>
     <string name="bill_payment">Back To Booking</string>
+    <string name="doc_page1_btn">Lets Start</string>
+    <string name="doc_page1_disc">Until one has loved an animal, a part of one\'s soul remains unawakened</string>
+    <string name="tv_ourdoctors">Our Doctors</string>
+    <string name="doc_name1">DR Rayen</string>
+    <string name="see_more_1">Book Now</string>
+    <string name="doc_name2">DR Chaan</string>
+    <string name="see_more2">Book Now</string>
+    <string name="doc_name3">DR Saam</string>
+    <string name="see_more_3">BOOK NOW</string>
+    <string name="doc_page4_text1">Doctor Name :-</string>
+    <string name="doc_page4_text2a">20 May 2022</string>
+    <string name="doc_page4_text3a">9.15a.m</string>
+    <string name="doc_page4_btn1">OK</string>
+    <string name="doc_page4_btn2">EDIT</string>
+    <string name="doc_page4_btn3">DELETE</string>
+    <string name="doc_dog_count_1">How many Dogs are Visiting :-</string>
+    <string name="doc_dog_counts">x</string>
+    <string name="doc_dog_count">1</string>
+    <string name="doc_dog_counta1" />
+    <string name="doc_page4_text4">Dog count :</string>
+    <string name="doc_page4_text4a">1</string>
+    <string name="docpaymentbtna">PAY</string>
+    <string name="docpayment">700</string>
+    />
 
 
     <!--    Social Part Strings  -->
