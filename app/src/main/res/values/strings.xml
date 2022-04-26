@@ -62,4 +62,89 @@
     />
 
 
+    <!--    Social Part Strings  -->
+    <string name="homepage_main_text">Do not hesitate to adopt a dog!</string>
+    <string name="get_started_button"> Get Started </string>
+    <string name="homepage_first_description"> Welcome to Dogvio. This is an app which help you to manage your
+    dogs healthcare, find partners and find day cares for your dog.</string>
+    <string name="homepage_second_description">
+        By pressing get started button you are agreeing to our terms and conditions.
+    </string>
+
+    <string name="homepage_getstarted_button"> Get Started </string>
+    <string name="homepage_dog_image"> Dog Image </string>
+    <string name="login_page_title"> Login </string>
+    <string name="enter_login_credentials_text"> Enter your login credentials to login
+    to the application</string>
+    <string name="login_page_labels_email">Email</string>
+    <string name="login_page_labels_password">Password</string>
+    <string name="login_page_labels_emailhint">Enter Your Email</string>
+    <string name="login_page_labels_password_hint">Enter Your Password</string>
+    <string name="login_button"> Login </string>
+    <string name="login_page_not_registered_text"> Do not have an account as yet? Click here to register </string>
+    <string name="register_page_title"> Register </string>
+    <string name="enter_registration_credentials_text"> Enter your details to register for the application</string>
+    <string name="go_to_login_text"> Have an account? Click here to login</string>
+    <string name="username_input"> Your Name</string>
+    <string name="register_button"> Register </string>
+    <string name="social_dogs_partners"> Partners </string>
+    <string name="social_dogs_partners_close_text"> Partners close to you </string>
+    <string name="puppuy_name"> Puppy Taby </string>
+    <string name="social_puppuy_category"> French Black Puppy </string>
+    <string name="social_puppy_call_owner"> Call Owner </string>
+    <string name="social_dog_breed_label"> Breed </string>
+    <string name="social_dog_age_label"> Age </string>
+    <string name="social_dog_age"> 7 </string>
+    <string name="social_dog_color"> Black </string>
+    <string name="social_dog_color_label"> Colour </string>
+    <string name="dog_gender_label"> Gender </string>
+    <string name="dog_gender"> Male </string>
+    <string name="social_dog_description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </string>
+
+    <string name="social_add_your_dog_headline"> Add your dog </string>
+    <string name="social_add_your_dog_small_description"> Add your dog to the community.
+So We will display hime to the others! </string>
+
+    <string name="social_add_form_dog_name_label"> Name </string>
+    <string name="social_add_form_dog_name_hint"> Enter Name </string>
+
+    <string name="social_add_form_dog_breed_label"> Breed </string>
+    <string name="social_add_form_dog_breed_hint"> Enter Breed </string>
+
+    <string name="social_add_form_dog_dob_label"> Date of Birth </string>
+    <string name="social_add_form_dog_dob_hint"> Enter date of birth </string>
+
+    <string name="social_add_form_dog_sex_label"> Sex </string>
+    <string name="social_add_form_dog_sex_hint"> Enter sex </string>
+
+    <string name="social_add_form_dog_contact_label"> Contact Number </string>
+    <string name="social_add_form_dog_contact_hint"> Enter your contact number </string>
+
+    <string name="social_add_form_dog_description_label"> Brief Description </string>
+    <string name="social_add_form_dog_description_hint"> Enter a brief description about your dog </string>
+
+    <string name="social_add_form_dog_image_label"> Image </string>
+    <string name="social_add_form_dog_image_label_hint"> Image Link </string>
+
+    <string name="add_dog_submit_button"> Add Dog </string>
+    <string name="socialbackButtonImage">Back Button</string>
+
+    <string name="social_user_dog_list_headline"> Pets On Board </string>
+    <string name="social_user_dog_list_description">
+        Here are your puppies. Click on the icons to
+edit or remove your puppy
+    </string>
+
+    <string name="navbar_title">
+        Choose where you wanna go!
+    </string>
+
+    <string name="healthcare">Healthcare</string>
+    <string name="doctor_booking">Doctor Channeling</string>
+    <string name="daycare">Daycare</string>
+    <string name="findpets">Find Pets</string>
+    <string name="username">Hey, Pasindu</string>
+    <string name="socialized_pets">Your pets on social</string>
 </resources>

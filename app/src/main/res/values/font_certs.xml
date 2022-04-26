@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <array name="_certs">
+        <item>@array/_certs_dev</item>
+        <item>@array/_certs_prod</item>
+    </array>
+    <string-array name="_certs_dev">
+        <item>
+     
+        </item>
+    </string-array>
+    <string-array name="_certs_prod">
+        <item>
     <array name="com_google_android_gms_fonts_certs">
         <item>@array/com_google_android_gms_fonts_certs_dev</item>
         <item>@array/com_google_android_gms_fonts_certs_prod</item>

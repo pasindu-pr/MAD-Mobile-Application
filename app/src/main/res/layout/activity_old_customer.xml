@@ -12,7 +12,7 @@
         android:layout_width="235dp"
         android:layout_height="59dp"
         android:layout_marginTop="204dp"
-        android:background="@drawable/button_drawable"
+        android:background="@drawable/social_button_drawable"
         android:text="@string/daycare_btn2"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
