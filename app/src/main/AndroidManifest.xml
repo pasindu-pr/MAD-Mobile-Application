@@ -10,6 +10,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".HealthCare_Details_Update"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_MealList_Add"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_MealList_Modify"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_MealList"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_Details"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_BMI"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCare_Welcome"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".NavigationPage"
             android:exported="true" />
         <activity
@@ -84,14 +113,10 @@
             android:name=".Old_Customer"
             android:exported="false" />
         <activity
-            android:name=".Day_Care"
-            android:exported="true" />
-        <activity
             android:name=".Daycare_Homepage"
             android:exported="true" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
 </manifest>

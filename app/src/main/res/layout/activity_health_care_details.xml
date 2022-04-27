@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthbmi"
+    tools:context=".HealthCare_Details">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="98dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profilepic2" />
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="267dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/detail_name"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detail_breed"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/detail_breed"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_name" />
+
+    <TextView
+        android:id="@+id/detail_age"
+        android:layout_width="77dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/detail_agev"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_editage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_breed"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <EditText
+        android:id="@+id/detail_editage"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/detail_editage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/detail_weightv"
+        android:layout_width="77dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/detail_weightv"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_editweightv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_breed"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/detail_editweightv"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/detail_editweightv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_editage" />
+
+    <TextView
+        android:id="@+id/detail_Heightv"
+        android:layout_width="77dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/detail_Heightv"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_editHeightv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_breed"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/detail_editHeightv"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/detail_editHeightv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_editweightv" />
+
+    <TextView
+        android:id="@+id/detail_BMIv"
+        android:layout_width="77dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:text="@string/detail_BMIv"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_editBMIv"
+        app:layout_constraintEnd_toStartOf="@+id/detail_editBMIv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/detail_editBMIv"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/detail_editBMIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_editHeightv" />
+
+    <TextView
+        android:id="@+id/detail_Vaccine"
+        android:layout_width="125dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/detail_Vaccine"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/detail_editVaccine"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_BMIv" />
+
+    <EditText
+        android:id="@+id/detail_editVaccine"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/detail_editVaccine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_editBMIv" />
+
+    <Button
+        android:id="@+id/btn_detail_update"
+        android:layout_width="231dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/button_drawable"
+        android:text="@string/btn_detail_update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="369dp"
+        android:layout_height="118dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_detail_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063"
+        app:srcCompat="@drawable/border" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

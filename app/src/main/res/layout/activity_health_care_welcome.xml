@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthbmi"
+    tools:context=".HealthCare_Welcome">
+
+    <Button
+        android:id="@+id/btn_Meal"
+        android:layout_width="170dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_drawable"
+        android:text="@string/btn_Meal"
+        android:textColor="@color/black"
+
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Details" />
+
+    <Button
+        android:id="@+id/btn_BMI"
+        android:layout_width="170dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/button_drawable"
+        android:text="@string/btn_BMI"
+        android:textColor="@color/black"
+
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_wc" />
+
+    <ImageView
+        android:id="@+id/img_wc"
+        android:layout_width="374dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/health1" />
+
+    <Button
+        android:id="@+id/btn_Details"
+        android:layout_width="170dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_drawable"
+        android:text="@string/btn_Details"
+        android:textColor="@color/black"
+
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_wc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
