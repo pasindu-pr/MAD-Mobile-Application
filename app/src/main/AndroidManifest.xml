@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".Button_Page"
+            android:exported="false" />
+        <activity
             android:name=".Calculator"
             android:name=".NavigationPage"
             android:exported="true" />

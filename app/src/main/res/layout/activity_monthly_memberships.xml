@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00FFFFFF"
-    tools:context=".Monthly_Memberships">
+    tools:context=".Monthly_Memberships"
+    android:background="@drawable/backgroun">
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="273dp"
         android:layout_height="38dp"
         android:layout_marginTop="36dp"
-        android:background="#000000"
+        android:background="#CB7DD8"
         android:fontFamily="monospace"
         android:text="@string/text6"
         android:textAlignment="center"
@@ -43,7 +43,7 @@
         android:layout_width="280dp"
         android:layout_height="43dp"
         android:layout_marginTop="4dp"
-        android:background="#000000"
+        android:background="#CB7DD8"
         android:fontFamily="monospace"
         android:text="@string/text8"
         android:textAlignment="center"
@@ -75,7 +75,7 @@
         android:layout_width="273dp"
         android:layout_height="38dp"
         android:layout_marginTop="4dp"
-        android:background="#000000"
+        android:background="#CB7DD8"
         android:fontFamily="monospace"
         android:text="@string/text10"
         android:textAlignment="center"
@@ -108,7 +108,7 @@
         android:layout_width="273dp"
         android:layout_height="38dp"
         android:layout_marginTop="4dp"
-        android:background="#000000"
+        android:background="#CB7DD8"
         android:fontFamily="monospace"
         android:text="@string/text12"
         android:textAlignment="center"
@@ -140,7 +140,7 @@
         android:layout_width="273dp"
         android:layout_height="38dp"
         android:layout_marginTop="4dp"
-        android:background="#000000"
+        android:background="#CB7DD8"
         android:fontFamily="monospace"
         android:text="@string/text19"
         android:textAlignment="center"
@@ -172,7 +172,7 @@
         android:layout_width="273dp"
         android:layout_height="38dp"
         android:layout_marginTop="4dp"
-        android:background="#000000"
+        android:background="#CB7DD8"
         android:fontFamily="monospace"
         android:text="@string/text21"
         android:textAlignment="center"
@@ -200,7 +200,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/B_button5"
         android:layout_width="155dp"
         android:layout_height="58dp"
         android:layout_marginStart="24dp"
