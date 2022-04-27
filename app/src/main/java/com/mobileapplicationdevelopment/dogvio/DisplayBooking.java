@@ -24,32 +24,13 @@ public class DisplayBooking extends AppCompatActivity {
         actionBar5.setDisplayShowHomeEnabled(true);
         actionBar5.setDisplayHomeAsUpEnabled(true);
 
-        button7 = findViewById(R.id.button7);
         button9 = findViewById(R.id.button9);
-        button10  = findViewById(R.id.button8);
 
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent7 = new Intent(getApplicationContext(), Update_Booking.class);
-                startActivity(intent7);
-
-            }
-        });
-
-        button10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent1 = new Intent(getApplicationContext(), Delete_Booking.class);
-                startActivity(intent1);
-            }
-        });
-
-
+        
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent9 = new Intent(getApplicationContext(), Add_Bill.class);
+                Intent intent9 = new Intent(getApplicationContext(), Button_Page.class);
                 startActivity(intent9);
 
             }

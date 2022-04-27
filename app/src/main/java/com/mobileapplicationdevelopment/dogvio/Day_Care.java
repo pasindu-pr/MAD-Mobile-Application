@@ -11,6 +11,7 @@ import android.widget.Button;
 public class Day_Care extends AppCompatActivity {
 
     Button button2;
+    Button button2_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +23,22 @@ public class Day_Care extends AppCompatActivity {
         actionBar1.setDisplayShowHomeEnabled(true);
         actionBar1.setDisplayHomeAsUpEnabled(true);
 
-        button2 = findViewById(R.id.button3);
+        button2  = findViewById(R.id.button3);
+        button2_1 = findViewById(R.id.button4);
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent2 = new Intent(getApplicationContext(), Old_Customer.class);
                 startActivity(intent2);
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(getApplicationContext(), Old_Customer.class);
+                startActivity(intent3);
             }
         });
     }

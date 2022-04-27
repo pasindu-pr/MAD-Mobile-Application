@@ -31,13 +31,3 @@ public class Add_Bill extends AppCompatActivity {
         });
     }
 }
-
-
-
-
-
-
-
-
-
-

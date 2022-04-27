@@ -4,56 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayBooking">
+    tools:context=".DisplayBooking"
+    android:background="@drawable/backgroun">
+
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="276dp"
-        android:layout_height="181dp"
+        android:id="@+id/imageView4"
+        android:layout_width="270dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="96dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView36"
-        app:srcCompat="@drawable/dog2" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dog5" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="86dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
-        android:text="About dog"
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="413dp"
+        android:layout_height="94dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_wave__2_" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="111dp"
         android:layout_height="23dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="256dp"
+        android:fontFamily="sans-serif-black"
         android:text="Dog Name:"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="284dp"
+        android:fontFamily="sans-serif-black"
         android:text="Roxy"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.334"
+        app:layout_constraintHorizontal_bias="0.344"
         app:layout_constraintStart_toEndOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
         android:text="Breed : "
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -61,9 +73,12 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
         android:text="‎German Shepherds"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -71,9 +86,12 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
         android:text="Dog Age: "
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
@@ -81,111 +99,51 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
         android:text="Month 4"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView19"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
-        android:text="Dog Owner Details"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
-        android:text="Owner Name: "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="64dp"
-        android:text="Tharindu Dasun"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toEndOf="@+id/textView26"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
-        android:text="Owner Email:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="24dp"
-        android:text="navoda123@gmail.com"
-        app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
-        android:text="Contact No:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
-
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="24dp"
-        android:text="0710568945"
-        app:layout_constraintStart_toEndOf="@+id/textView30"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
         android:text="Day In"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
         android:text="12/03/2022"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView32"
-        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
         android:text="Day Out"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
@@ -193,57 +151,39 @@
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
         android:text="12/03/2022"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toEndOf="@+id/textView34"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="101dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/Update_btn"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="99dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/delete_btn"
-        android:textSize="10sp"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/textView35" />
-
-    <Button
         android:id="@+id/button9"
-        android:layout_width="90dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/Bill"
-        android:textSize="10sp"
+        android:layout_width="341dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/button_drawable"
+        android:text="@string/Next"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="167dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="307dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
         android:text="Booking Summery"
-        android:textSize="20sp"
+        android:textColor="#0E0E0E"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
