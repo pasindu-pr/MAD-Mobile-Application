@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthbmi"
+    tools:context=".HealthCare_MealList">
+
+    <TextView
+        android:id="@+id/meal_1"
+        android:layout_width="235dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/meal_1"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_1stmeal"
+        android:layout_width="115dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_drawable"
+        android:text="@string/btn_1stmeal"
+        app:layout_constraintBottom_toBottomOf="@+id/meal_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/meal_2"
+        android:layout_width="224dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/meal_2"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meal_1" />
+
+    <Button
+        android:id="@+id/btn_2ndmeal"
+        android:layout_width="115dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_drawable"
+        android:text="@string/btn_2ndmeal"
+        app:layout_constraintBottom_toBottomOf="@+id/meal_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_1stmeal"
+        app:layout_constraintVertical_bias="0.858"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_updatemeal"
+        android:layout_width="141dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/button_drawable"
+        android:text="@string/btn_updatemeal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_addmeal"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_addmeal"
+        android:layout_width="141dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/button_drawable"
+        android:text="@string/btn_addmeal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
