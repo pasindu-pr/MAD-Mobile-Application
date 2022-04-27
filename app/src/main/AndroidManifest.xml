@@ -86,6 +86,9 @@
         <activity
             android:name=".Day_Care"
             android:exported="true" />
+        <activity
+            android:name=".Daycare_Homepage"
+            android:exported="true" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

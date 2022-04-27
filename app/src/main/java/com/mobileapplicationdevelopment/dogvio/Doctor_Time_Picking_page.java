@@ -1,4 +1,4 @@
-package com.example.dogapp;
+package com.mobileapplicationdevelopment.dogvio;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBar;

@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class NavigationPage extends AppCompatActivity {
     private TextView navBarSocialText;
     private  TextView socializedPetsText;
+    private TextView dayCarePetsText;
 
     private void onNavBarSocialTextClick() {
         Intent intent = new Intent(this, Social_DogsList.class);
@@ -19,6 +20,11 @@ public class NavigationPage extends AppCompatActivity {
 
     private void onSocializedPetsText() {
         Intent intent = new Intent(this, social_user_doglist.class);
+        startActivity(intent);
+    }
+
+    public void onDaycareHomepageClick() {
+        Intent intent = new Intent(this, Daycare_Homepage.class);
         startActivity(intent);
     }
 
@@ -32,6 +38,7 @@ public class NavigationPage extends AppCompatActivity {
 
         navBarSocialText = (TextView) findViewById(R.id.navBarSocialPets);
         socializedPetsText = (TextView) findViewById(R.id.socializedPets);
+        dayCarePetsText = (TextView) findViewById(R.id.dayCare);
 
         navBarSocialText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +51,13 @@ public class NavigationPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 onSocializedPetsText();
+            }
+        });
+
+        dayCarePetsText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onDaycareHomepageClick();
             }
         });
 
