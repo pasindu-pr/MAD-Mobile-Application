@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dogapp">
+    package="com.mobileapplicationdevelopment.dogvio">
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,60 @@
         android:theme="@style/Theme.DogApp">
         <activity
             android:name=".Calculator"
+            android:name=".NavigationPage"
+            android:exported="true" />
+        <activity
+            android:name=".social_user_doglist"
+            android:exported="true" />
+        <activity
+            android:name=".Social_AddDog"
+            android:exported="true" />
+        <activity
+            android:name=".Social_DogDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Social_DogsList"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrationPage"
+            android:exported="true" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+
+            <!-- Make Home Activity as the home page -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Doctor_Appoinment_payment"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_delete_popup_msg"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_Time_Picking_data_page"
+            android:exported="true" />
+        <activity
+            android:name=".Doctor_Time_Picking_page"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_Booking_Select_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_Booking_main"
+            android:exported="true" />
+        <activity
+            android:name=".Delete_Booking"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUs_Page"
             android:exported="false" />
         <activity
             android:name=".Delete_Booking"
@@ -32,16 +86,13 @@
             android:exported="false" />
         <activity
             android:name=".Day_Care"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Daycare_Homepage"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
