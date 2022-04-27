@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doc_name2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/doc_background"
+    tools:context=".Doctor_Booking_Select_Page">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="411dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/ic_docwave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/doc_page2_img"
+            android:layout_width="398dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="51dp"
+            app:srcCompat="@drawable/vet1" />
+
+        <TextView
+            android:id="@+id/tv_ourdoctors"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="182dp"
+            android:layout_weight=".5"
+            android:fontFamily="@font/abril_fatface"
+            android:shadowColor="#000000"
+            android:shadowDx="4.0"
+            android:shadowDy="4.0"
+            android:text="@string/tv_ourdoctors"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="412dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout6"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/doc_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/abril_fatface"
+            android:padding="2dp"
+            android:text="@string/doc_name1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/see_more_1"
+            android:layout_width="126dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/doc_name1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="0dp"
+            android:background="#00000000"
+            android:text="@string/see_more_1"
+            android:textColor="#DD2C00"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/doc_image1"
+            android:layout_width="111dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="143dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toEndOf="@+id/see_more_1"
+            android:src="@drawable/doctor2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="405dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:barrierMargin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+        <TextView
+            android:id="@+id/Doc_page2_doc2_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/abril_fatface"
+            android:padding="2dp"
+            android:text="@string/doc_name2"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/see_more2"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_below="@+id/Doc_page2_doc2_Name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:background="#00000000"
+            android:text="@string/see_more2"
+            android:textColor="#DD2C00" />
+
+        <ImageView
+            android:id="@+id/doc_image2"
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/Doc_page2_doc2_Name"
+            android:src="@drawable/doctor1"
+            tools:ignore="ImageContrastCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="407dp"
+        android:layout_height="110dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="108dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/doc_name3"
+            android:layout_width="124dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/abril_fatface"
+            android:padding="2dp"
+            android:text="@string/doc_name3"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/see_more_3"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_below="@+id/doc_name3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="2dp"
+            android:background="#00000000"
+            android:text="@string/see_more_3"
+            android:textColor="#DD2C00" />
+
+        <ImageView
+            android:id="@+id/doc_image3"
+            android:layout_width="117dp"
+            android:layout_height="117dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@+id/see_more_3"
+            android:src="@drawable/doctor4" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
