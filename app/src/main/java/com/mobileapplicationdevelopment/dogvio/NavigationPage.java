@@ -12,6 +12,8 @@ public class NavigationPage extends AppCompatActivity {
     private TextView navBarSocialText;
     private  TextView socializedPetsText;
     private TextView dayCarePetsText;
+    private  TextView healthCare;
+    private TextView doctorBooking;
 
     private void onNavBarSocialTextClick() {
         Intent intent = new Intent(this, Social_DogsList.class);
@@ -28,6 +30,18 @@ public class NavigationPage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onHealthcareHomepageClick() {
+        Intent intent = new Intent(this, HealthCare_Welcome.class);
+        startActivity(intent);
+    }
+
+
+    public  void onDoctoreBookingClick() {
+        Intent intent = new Intent(this, Doctor_Booking_main.class);
+        startActivity(intent);
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +53,8 @@ public class NavigationPage extends AppCompatActivity {
         navBarSocialText = (TextView) findViewById(R.id.navBarSocialPets);
         socializedPetsText = (TextView) findViewById(R.id.socializedPets);
         dayCarePetsText = (TextView) findViewById(R.id.dayCare);
+        healthCare = (TextView) findViewById(R.id.healthCare);
+        doctorBooking = (TextView) findViewById(R.id.doctorBooking);
 
         navBarSocialText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +74,22 @@ public class NavigationPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 onDaycareHomepageClick();
+            }
+        });
+
+
+        healthCare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onHealthcareHomepageClick();
+            }
+        });
+
+
+        doctorBooking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onDoctoreBookingClick();
             }
         });
 

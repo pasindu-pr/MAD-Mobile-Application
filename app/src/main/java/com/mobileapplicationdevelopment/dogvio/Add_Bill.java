@@ -13,7 +13,7 @@ public class Add_Bill extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_bill);
+//        setContentView(R.layout.activity_add_bill);
 
         ActionBar actionBar8 = getSupportActionBar();
         actionBar8.setTitle("Payment Bill");

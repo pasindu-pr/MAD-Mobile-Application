@@ -36,6 +36,7 @@
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_delete_booking.xml" value="0.20863616930312098" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_display_booking.xml" value="0.22826086956521738" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_doctor_appoinment_payment.xml" value="0.1" />
+        <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_health_care_welcome.xml" value="0.20863616930312098" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_login_page.xml" value="0.20863616930312098" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
@@ -74,6 +75,7 @@
         <entry key="..\:/DogApp2/app/src/main/res/layout/activity_update_booking.xml" value="0.264" />
         <entry key="..\:/DogApp2/app/src/main/res/layout/daycare_homepage.xml" value="0.23854166666666668" />
         <entry key="..\:/DogApp2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23055555555555557" />
+        <entry key="..\:/DogApp2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1875" />
         <entry key="..\:/MAD/app/src/main/res/drawable/border.xml" value="0.2555" />
         <entry key="..\:/MAD/app/src/main/res/drawable/button_drawable.xml" value="0.119" />
         <entry key="..\:/MAD/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
@@ -88,7 +90,6 @@
         <entry key="..\:/MAD/app/src/main/res/layout/activity_health_care_welcome.xml" value="0.264" />
         <entry key="..\:/MAD/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/MAD/app/src/main/res/layout/activity_monthly_memberships.xml" value="0.25" />
-        <entry key="..\:/DogApp2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1875" />
       </map>
     </option>
   </component>

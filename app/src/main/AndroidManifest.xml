@@ -10,10 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
-            android:name=".Button_Page"
-            android:exported="false" />
-        <activity
-            android:name=".Calculator"
             android:name=".HealthCare_Details_Update"
             android:exported="false" />
         <activity
@@ -97,9 +93,6 @@
             android:exported="false" />
         <activity
             android:name=".ContactUs_Page"
-            android:exported="false" />
-        <activity
-            android:name=".Delete_Booking"
             android:exported="false" />
         <activity
             android:name=".Update_Booking"
