@@ -141,6 +141,10 @@
     <string name="doc_page4_text4a">1</string>
     <string name="docpaymentbtna">PAY</string>
     <string name="docpayment">700</string>
+    <string name="doc_date">SELECT DATE</string>
+    <string name="User_Name">User Name  :-</string>
+    <string name="doc_user">User Name :-</string>
+    <string name="doc_dete">Doctor Name ,</string>
     />
 
     <!--    Social Part Strings  -->

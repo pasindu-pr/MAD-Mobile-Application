@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class Doctor_Appoinment_payment extends AppCompatActivity {
 
@@ -17,6 +18,9 @@ public class Doctor_Appoinment_payment extends AppCompatActivity {
         DocActionBar2.setDisplayShowHomeEnabled(true);
         DocActionBar2.setDisplayHomeAsUpEnabled(true);
 
+        int Drpay = getIntent().getIntExtra("pay",0);
+        TextView textVD = findViewById(R.id.docpayment);
+        textVD.setText(String.valueOf(Drpay));
 
     }
 }

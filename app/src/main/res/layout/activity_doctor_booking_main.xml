@@ -9,8 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout6"
-        android:layout_width="418dp"
-        android:layout_height="415dp"
+        android:layout_width="414dp"
+        android:layout_height="350dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         android:background="@drawable/ic_docwave"
@@ -19,8 +19,8 @@
 
         <ImageView
             android:id="@+id/doc_pag1_img"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="401dp"
+            android:layout_height="335dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
 
@@ -34,26 +34,34 @@
         android:layout_width="409dp"
         android:layout_height="70dp"
         android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-black"
         android:text="@string/doc_page1_btn"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doc_page1_disc"
         app:layout_constraintVertical_bias="0.342" />
 
     <TextView
         android:id="@+id/doc_page1_disc"
-        android:layout_width="375dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/doc_text_back"
+        android:layout_width="370dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/doc_text_background_2"
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
         android:text="@string/doc_page1_disc"
-        android:textSize="20sp"
+        android:textColor="@color/purple_500"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/doc_page1_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout6" />
 

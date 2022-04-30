@@ -1,6 +1,5 @@
 package com.mobileapplicationdevelopment.dogvio;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,33 +7,67 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.TimePicker;
-
-import com.google.android.material.datepicker.MaterialStyledDatePickerDialog;
 
 import java.util.Calendar;
 import java.util.Locale;
 
 public class Doctor_Time_Picking_page extends AppCompatActivity {
+
+    private EditText DogCount;
     private DatePickerDialog datePickerDialog;
     private Button dateButton;
+    private Button timeButton;
     private Bundle savedInstanceState;
+    private Button saveButton;
+    private String date ;
+    private String appointmentTime;
+    private String Drname;
+    ;
 
+    public void redirect() {
+        Intent intent = new Intent(this,Doctor_Time_Picking_data_page.class);
+        intent.putExtra("date", date);
+        intent.putExtra("time", appointmentTime);
+        intent.putExtra("nDrName" ,Drname );
+        intent.putExtra("DogCount" ,DogCount.getText().toString());
+        startActivity(intent);
+    }
+
+
+    //On Crate method-------------------------------------------------------------------------------------------------------------------------
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_time_picking_page);
         initDatePicker();
+
+
+        DogCount = (EditText)findViewById(R.id.doc_dog_counta1);
         dateButton = findViewById(R.id.datePickerButton);
         timeButton = findViewById(R.id.timeButton);
-        dateButton.setText(getTodaysDate());
-        setContentView(R.layout.activity_doctor_time_picking_page);
+        saveButton = findViewById(R.id.date_time_save_button);
+
+        //**********************************************************
+        Drname = getIntent().getStringExtra ("DrName");
+        TextView textVD = findViewById(R.id.Dr_Booked_Name);
+        textVD.setText(Drname);
+
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                redirect();
+            }
+        });
+
 
         ActionBar DocActionBar6 = getSupportActionBar();
         DocActionBar6.setTitle("Place Appointment");
@@ -42,30 +75,22 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         DocActionBar6.setDisplayHomeAsUpEnabled(true);
     }
 
-
-
-
-    private String getTodaysDate()
+    //-----------------------------------------------------------------------------------------------------------------------------------
+    private Bundle initDatePicker()
     {
-        Calendar cal = Calendar.getInstance();
-        int year = cal.get(Calendar.YEAR);
-        int month = cal.get(Calendar.MONTH);
-        month = month + 1;
-        int day = cal.get(Calendar.DAY_OF_MONTH);
-        return makeDateString(day, month, year);
-    }
 
-    private void initDatePicker()
-    {
         DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener()
         {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day)
             {
                 month = month + 1;
-                String date = makeDateString(day, month, year);
+                date = makeDateString(day, month, year);
                 dateButton.setText(date);
+                //*********************************************************
+
             }
+
         };
 
         Calendar cal = Calendar.getInstance();
@@ -76,8 +101,9 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         int style = AlertDialog.THEME_HOLO_LIGHT;
 
         datePickerDialog = new DatePickerDialog(this, style, dateSetListener, year, month, day);
-        datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
+        datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
 
+        return null;
     }
 
     private String makeDateString(int day, int month, int year)
@@ -111,7 +137,6 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
             return "NOV";
         if(month == 12)
             return "DEC";
-
         //default should never happen
         return "JAN";
     }
@@ -127,7 +152,7 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
 
     //Time Button
 
-    Button timeButton;
+
     int hour, minute;
 
 
@@ -141,7 +166,8 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
             {
                 hour = selectedHour;
                 minute = selectedMinute;
-                timeButton.setText(String.format(Locale.getDefault(), "%02d:%02d",hour, minute));
+                appointmentTime = String.format(Locale.getDefault(), "%02d:%02d",hour, minute);
+                timeButton.setText(appointmentTime);
             }
         };
         TimePickerDialog timePickerDialog = new TimePickerDialog(this, /*style,*/ onTimeSetListener, hour, minute, true);
@@ -149,6 +175,5 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         timePickerDialog.setTitle("Select Time");
         timePickerDialog.show();
     }
-
 
 }

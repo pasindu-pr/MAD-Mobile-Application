@@ -20,12 +20,12 @@
 
         <TextView
             android:id="@+id/booking_don_msg"
-            android:layout_width="394dp"
-            android:layout_height="96dp"
+            android:layout_width="368dp"
+            android:layout_height="61dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="0dp"
+            android:layout_marginStart="29dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="11dp"
             android:text="Your Booking is Done..."
@@ -51,11 +51,11 @@
         android:id="@+id/doc_page4_text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="@string/doc_page4_text1"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toStartOf="@+id/doc_page4_text1a"
         app:layout_constraintHorizontal_bias="0.0"
@@ -64,17 +64,19 @@
 
     <TextView
         android:id="@+id/doc_page4_text1a"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
+        android:layout_width="140dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="27dp"
         android:text="DR Rion"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBaseline_toBaselineOf="@+id/doc_page4_text1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4" />
 
     <TextView
         android:id="@+id/doc_page4_text2"
@@ -83,67 +85,54 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:text="Appoinment Date :-"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doc_page4_text1" />
 
     <TextView
         android:id="@+id/doc_page4_text2a"
-        android:layout_width="125dp"
-        android:layout_height="29dp"
+        android:layout_width="149dp"
+        android:layout_height="34dp"
         android:layout_marginStart="44dp"
         android:layout_marginEnd="24dp"
         android:text="@string/doc_page4_text2a"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
         app:layout_constraintBaseline_toBaselineOf="@+id/doc_page4_text2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.741"
         app:layout_constraintStart_toEndOf="@+id/doc_page4_text2" />
 
     <TextView
         android:id="@+id/doc_page4_text3"
         android:layout_width="195dp"
         android:layout_height="33dp"
-        android:layout_marginStart="27dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="24dp"
         android:text="Appoinment time :-"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doc_page4_text2" />
 
     <TextView
-        android:id="@+id/doc_page4_text3a"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:text="@string/doc_page4_text3a"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBaseline_toBaselineOf="@+id/doc_page4_text3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
-        app:layout_constraintStart_toEndOf="@+id/doc_page4_text3" />
-
-    <TextView
         android:id="@+id/doc_page4_text3a2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:text="@string/doc_page4_text3a"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBaseline_toBaselineOf="@+id/doc_page4_text3a"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
-        app:layout_constraintStart_toEndOf="@+id/doc_page4_text3" />
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/doc_page4_text3"
+        app:layout_constraintTop_toBottomOf="@+id/doc_page4_text2a" />
 
     <Button
         android:id="@+id/doc_page4_btn1"
@@ -151,6 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:background="@drawable/button_drawable"
+        android:onClick="mult"
         android:text="@string/doc_page4_btn1"
         app:layout_constraintBaseline_toBaselineOf="@+id/doc_page4_btn2"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -183,27 +173,27 @@
         android:id="@+id/doc_page4_text4"
         android:layout_width="126dp"
         android:layout_height="34dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="20dp"
         android:text="@string/doc_page4_text4"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doc_page4_text3" />
 
     <TextView
         android:id="@+id/doc_page4_text4a"
-        android:layout_width="98dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginEnd="35dp"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="92dp"
         android:text="@string/doc_page4_text4a"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
         app:layout_constraintBaseline_toBaselineOf="@+id/doc_page4_text4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/doc_page4_text4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
