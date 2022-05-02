@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/Dog_Age"
         android:layout_width="370dp"
         android:layout_height="47dp"
         android:layout_marginTop="16dp"
@@ -62,10 +62,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/Dog_Breed" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/Dog_Breed"
         android:layout_width="366dp"
         android:layout_height="45dp"
         android:layout_marginTop="12dp"
@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Dog_Name" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/addBooking"
         android:layout_width="311dp"
         android:layout_height="47dp"
         android:layout_marginTop="116dp"
@@ -89,10 +89,10 @@
         android:text="@string/delete_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
+        app:layout_constraintTop_toBottomOf="@+id/Dog_Out" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/Dog_In"
         android:layout_width="365dp"
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
@@ -104,10 +104,10 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/Dog_Age" />
 
     <EditText
-        android:id="@+id/editTextDate2"
+        android:id="@+id/Dog_Out"
         android:layout_width="364dp"
         android:layout_height="49dp"
         android:layout_marginTop="28dp"
@@ -120,6 +120,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+        app:layout_constraintTop_toBottomOf="@+id/Dog_In" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

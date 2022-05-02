@@ -23,7 +23,7 @@ public class Delete_Booking extends AppCompatActivity {
         actionBar6.setDisplayHomeAsUpEnabled(true);
 
 
-        button7 = findViewById(R.id.button6);
+        button7 = findViewById(R.id.addBooking);
 
         button7.setOnClickListener(new View.OnClickListener() {
             @Override

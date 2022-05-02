@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/Dog_Age"
         android:layout_width="370dp"
         android:layout_height="47dp"
         android:layout_marginTop="16dp"
@@ -67,35 +67,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/Dog_Breed" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/Dog_Breed"
         android:layout_width="366dp"
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Breed"
         android:inputType="textPersonName"
+        android:onClick="saveBooking"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Dog_Name" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/addBooking"
         android:layout_width="285dp"
         android:layout_height="36dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="96dp"
         android:background="@drawable/button_drawable"
+        android:onClick="saveBooking"
         android:text="@string/Add_booking"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
+        app:layout_constraintTop_toBottomOf="@+id/Dog_Out" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/Dog_In"
         android:layout_width="365dp"
         android:layout_height="55dp"
         android:layout_marginTop="24dp"
@@ -105,10 +107,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/Dog_Age" />
 
     <EditText
-        android:id="@+id/editTextDate2"
+        android:id="@+id/Dog_Out"
         android:layout_width="364dp"
         android:layout_height="49dp"
         android:layout_marginTop="20dp"
@@ -118,51 +120,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.234"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+        app:layout_constraintTop_toBottomOf="@+id/Dog_In" />
 
-    <TextView
-        android:id="@+id/textView37"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/packag"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
-
-    <RadioGroup
-        android:layout_width="196dp"
-        android:layout_height="98dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="52dp"
+    <EditText
+        android:id="@+id/Dog_PackageNo"
+        android:layout_width="373dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Package No "
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView37"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate2">
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dog_Out" />
 
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:text="@string/radio1" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="26dp"
-            android:text="@string/radio2" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:layout_height="22dp"
-            android:text="@string/radio3" />
-
-        <RadioButton
-            android:id="@+id/radioButton4"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:text="@string/radio4" />
-    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

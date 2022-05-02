@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class Monthly_Memberships extends AppCompatActivity {
 
-    Button button3;
+
     Button button4;
 
     @Override
@@ -24,21 +24,13 @@ public class Monthly_Memberships extends AppCompatActivity {
         actionBar1.setDisplayHomeAsUpEnabled(true);
 
 
-        button3 = findViewById(R.id.B_button5);
-        button4 = findViewById(R.id.button10);
+        button4 = findViewById(R.id.GoBook);
 
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent3 = new Intent(getApplicationContext(), Booking_DayCare.class);
-                startActivity(intent3);
-            }
-        });
 
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent4 = new Intent(getApplicationContext(), Calculator.class);
+                Intent intent4 = new Intent(getApplicationContext(), Booking_DayCare.class);
                 startActivity(intent4);
             }
         });

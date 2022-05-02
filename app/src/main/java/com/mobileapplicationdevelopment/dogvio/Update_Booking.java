@@ -21,7 +21,7 @@ public class Update_Booking extends AppCompatActivity {
         actionBar6.setDisplayHomeAsUpEnabled(true);
 
 
-        button6 = findViewById(R.id.button6);
+        button6 = findViewById(R.id.addBooking);
 
         button6.setOnClickListener(new View.OnClickListener() {
             @Override

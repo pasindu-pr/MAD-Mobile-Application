@@ -230,4 +230,5 @@ edit or remove your puppy
     <string name="socialized_pets">Your pets on social</string>
     <string name="radio3">Package 03</string>
     <string name="radio4">Package 04</string>
+    <string name="displaypackno">Package No</string>
 </resources>

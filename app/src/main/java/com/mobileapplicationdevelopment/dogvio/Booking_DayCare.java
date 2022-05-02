@@ -3,32 +3,82 @@ package com.mobileapplicationdevelopment.dogvio;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.mobileapplicationdevelopment.dogvio.daycareDatabase.DBHelper;
 
 public class Booking_DayCare extends AppCompatActivity {
     Button button4;
+    private EditText Bedogname, Bedogbreed,Bedogage, Bedogin,Bedogout,Bedogpackageno;
+    private Button addbooking;
+    //private DBHandler dbHandler;
+    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking_day_care);
 
+        /*action bar*/
         ActionBar actionBar4 = getSupportActionBar();
         actionBar4.setTitle("DayCare Booking");
         actionBar4.setDisplayShowHomeEnabled(true);
         actionBar4.setDisplayHomeAsUpEnabled(true);
 
-        button4 = findViewById(R.id.button6);
+        /*pass varibles*/
+        Bedogname = findViewById(R.id.Dog_Name);
+        Bedogbreed = findViewById(R.id.Dog_Breed);
+        Bedogage= findViewById(R.id.Dog_Age);
+        Bedogin= findViewById(R.id.Dog_In);
+        Bedogout= findViewById(R.id.Dog_Out);
+        Bedogpackageno = findViewById(R.id.Dog_PackageNo);
+        context = this;
+        addbooking = findViewById(R.id.addBooking);
 
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent4 = new Intent(getApplicationContext(), DisplayBooking.class);
-                startActivity(intent4);
+
+
+    }
+
+    public void saveBooking(View view){
+        String bdname = Bedogname.getText().toString();
+        String bdbreed = Bedogbreed.getText().toString();
+        String bdage = Bedogage.getText().toString();
+        String bdin = Bedogin.getText().toString();
+        String bdout = Bedogout.getText().toString();
+        String bdpackageno = Bedogpackageno.getText().toString();
+        DBHelper dbhelper = new DBHelper(this);
+
+        if(bdbreed.isEmpty() || bdname.isEmpty()){
+            Toast.makeText(this, "Enter values" , Toast.LENGTH_LONG).show();
+        }else{
+            long inserted = dbhelper.addBooking(bdname,bdbreed,bdage,bdin,bdout,bdpackageno);
+
+            if(inserted >0){
+                Toast.makeText(this, "Data inserted successfully" , Toast.LENGTH_LONG).show();
+
+                addbooking.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(context,DisplayBooking.class);
+                        intent.putExtra("Keydogname",bdname);
+                        intent.putExtra("Keydogbreed",bdbreed);
+                        intent.putExtra("Keydogage",bdage);
+                        intent.putExtra("Keydogin",bdin);
+                        intent.putExtra("Keydogout",bdout);
+                        intent.putExtra("Keydogpack",bdpackageno);
+                        startActivity(intent);
+
+                    }
+                });
+            }else {
+                Toast.makeText(this, "Something went wrrong" , Toast.LENGTH_LONG).show();
             }
-        });
+        }
     }
 }

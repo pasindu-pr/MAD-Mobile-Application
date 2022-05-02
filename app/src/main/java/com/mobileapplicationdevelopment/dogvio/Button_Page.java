@@ -9,9 +9,10 @@ import android.view.View;
 import android.widget.Button;
 
 public class Button_Page extends AppCompatActivity {
-  Button button1;
-  Button button2;
-  Button button3;
+
+    Button button1;
+    Button button2;
+    Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,7 @@ public class Button_Page extends AppCompatActivity {
         actionBar5.setDisplayShowHomeEnabled(true);
         actionBar5.setDisplayHomeAsUpEnabled(true);
 
-         button1 = findViewById(R.id.B_button3);
+        button1 = findViewById(R.id.B_button3);
         button2 = findViewById(R.id.B_button4);
         button3 = findViewById(R.id.B_button5);
 
