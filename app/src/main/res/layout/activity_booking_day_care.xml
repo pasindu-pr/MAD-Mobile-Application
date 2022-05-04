@@ -85,14 +85,14 @@
 
     <Button
         android:id="@+id/addBooking"
-        android:layout_width="285dp"
-        android:layout_height="36dp"
+        android:layout_width="160dp"
+        android:layout_height="37dp"
         android:layout_marginTop="96dp"
         android:background="@drawable/button_drawable"
         android:onClick="saveBooking"
         android:text="@string/Add_booking"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Dog_Out" />
 
@@ -134,6 +134,17 @@
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Dog_Out" />
+
+    <Button
+        android:id="@+id/UpdatebookingButton"
+        android:layout_width="151dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_drawable"
+        android:text="UpdateBooking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dog_PackageNo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

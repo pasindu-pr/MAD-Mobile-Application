@@ -3,17 +3,21 @@ package com.mobileapplicationdevelopment.dogvio;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
+
+import com.mobileapplicationdevelopment.dogvio.daycareDatabase.DBHelper;
 
 public class DisplayBooking extends AppCompatActivity {
 
-    Button buttonpage;
-    private EditText getdogname, getdogbreed,getdogage, getdogin,getdogout,getdogpackageno;
+    Button calculator, update, delete;
+    private TextView getdogname, getdogbreed,getdogage, getdogin,getdogout,getdogpackageno;
+    private DBHelper dbhelper;
+    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +30,9 @@ public class DisplayBooking extends AppCompatActivity {
         actionBar5.setDisplayShowHomeEnabled(true);
         actionBar5.setDisplayHomeAsUpEnabled(true);
 
-        buttonpage = findViewById(R.id.displaybutton);
+        calculator = findViewById(R.id.calculator);
+        update = findViewById(R.id.update);
+        delete = findViewById(R.id.delete);
 
         /*create variables*/
         getdogname= findViewById(R.id.Dog_Name);
@@ -59,13 +65,34 @@ public class DisplayBooking extends AppCompatActivity {
         daycaredogout.setText(dogout1);
         daycaredogpack.setText(dogpack1);
 
-        buttonpage.setOnClickListener(new View.OnClickListener() {
+
+       calculator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent9 = new Intent(getApplicationContext(), Button_Page.class);
+                Intent intent9 = new Intent(getApplicationContext(),Calculator.class);
                 startActivity(intent9);
 
             }
         });
+
+
+
+        /*    update.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(context,Update_Booking.class);
+                    intent.putExtra("Keydogname1",dogname1);
+                    intent.putExtra("Keydogbreed1",dogbreed1);
+                    intent.putExtra("Keydogage1",dogage1);
+                    intent.putExtra("Keydogin1",dogin1);
+                    intent.putExtra("Keydogout1", dogout1);
+                    intent.putExtra("Keydogpack1",dogpack1);
+                    startActivity(intent);
+                }
+
+            });
+*/
+
+
     }
 }

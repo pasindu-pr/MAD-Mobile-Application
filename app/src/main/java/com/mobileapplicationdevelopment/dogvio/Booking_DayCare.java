@@ -45,6 +45,7 @@ public class Booking_DayCare extends AppCompatActivity {
 
     }
 
+
     public void saveBooking(View view){
         String bdname = Bedogname.getText().toString();
         String bdbreed = Bedogbreed.getText().toString();
@@ -74,11 +75,25 @@ public class Booking_DayCare extends AppCompatActivity {
                         intent.putExtra("Keydogpack",bdpackageno);
                         startActivity(intent);
 
+                       /* Intent intent1 = new Intent(context,Update_Booking.class);
+                        intent1.putExtra("Keydogname1",bdname);
+                        intent1.putExtra("Keydogbreed1",bdbreed);
+                        intent1.putExtra("Keydogage1",bdage);
+                        intent1.putExtra("Keydogin1",bdin);
+                        intent1.putExtra("Keydogout1",bdout);
+                        intent1.putExtra("Keydogpack1",bdpackageno);
+
+                        startActivity(intent1);
+*/
                     }
+
+
                 });
             }else {
                 Toast.makeText(this, "Something went wrrong" , Toast.LENGTH_LONG).show();
             }
         }
     }
+
+
 }

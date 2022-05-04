@@ -44,15 +44,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <EditText
-        android:id="@+id/Dog_Name"
+        android:id="@+id/UpdateDog_Name"
         android:layout_width="370dp"
         android:layout_height="49dp"
         android:layout_marginTop="56dp"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:hint="Dog Name"
         android:inputType="textPersonName"
-        android:text="Roxy"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
@@ -60,36 +58,32 @@
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <EditText
-        android:id="@+id/Dog_Age"
+        android:id="@+id/UpdateDog_Age"
         android:layout_width="370dp"
         android:layout_height="47dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:hint="Dog Age"
         android:inputType="textPersonName"
-        android:text="4 months"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Dog_Breed" />
+        app:layout_constraintTop_toBottomOf="@+id/UpdateDog_Breed" />
 
     <EditText
-        android:id="@+id/Dog_Breed"
+        android:id="@+id/UpdateDog_Breed"
         android:layout_width="366dp"
         android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:hint="Breed"
         android:inputType="textPersonName"
-        android:text="‎German Shepherds"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Dog_Name" />
+        app:layout_constraintTop_toBottomOf="@+id/UpdateDog_Name" />
 
     <Button
         android:id="@+id/addBooking"
@@ -100,38 +94,44 @@
         android:text="@string/Update_chng"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Dog_Out" />
+        app:layout_constraintTop_toBottomOf="@+id/UpdateDog_Out" />
 
     <EditText
-        android:id="@+id/Dog_In"
+        android:id="@+id/UpdateDog_In"
         android:layout_width="365dp"
         android:layout_height="55dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:hint="Day In"
         android:inputType="date"
-        android:text="13/03/2022"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Dog_Age" />
+        app:layout_constraintTop_toBottomOf="@+id/UpdateDog_Age" />
 
     <EditText
-        android:id="@+id/Dog_Out"
+        android:id="@+id/UpdateDog_Out"
         android:layout_width="364dp"
         android:layout_height="49dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:hint="Day Out"
         android:inputType="date"
-        android:text="13/03/2022"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Dog_In" />
+        app:layout_constraintTop_toBottomOf="@+id/UpdateDog_In" />
+
+    <EditText
+        android:id="@+id/UpdatePackgeNo"
+        android:layout_width="355dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="536dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
