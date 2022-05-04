@@ -28,26 +28,28 @@ public class Update_Booking extends AppCompatActivity {
         actionBar6.setDisplayShowHomeEnabled(true);
         actionBar6.setDisplayHomeAsUpEnabled(true);
 
-        String dogname2 = getIntent().getStringExtra("Keydogname1");
-        String dogbreed2 = getIntent().getStringExtra("Keydogbreed1");
-        String dogage2 = getIntent().getStringExtra( "Keydogage1");
-        String dogin2 = getIntent().getStringExtra("Keydogin1");
-        String dogout2 = getIntent().getStringExtra("Keydogout1");
-        String dogpack2 = getIntent().getStringExtra("Keydogpack1");
+        /*pass data*/
+        String Udogname = getIntent().getStringExtra("Keydogname");
+        String Udogbreef = getIntent().getStringExtra("Keydogbreed");
+        String Udogage = getIntent().getStringExtra("Keydogage");
+        String Udogin = getIntent().getStringExtra("Keydogin");
+        String Udogout = getIntent().getStringExtra("Keydogout");
+        String Udogpack = getIntent().getStringExtra("Keydogpack");
 
-        EditText updatename = findViewById(R.id.UpdateDog_Name);
-        EditText updatebreed = findViewById(R.id.UpdateDog_Breed);
-        EditText updateage = findViewById(R.id.UpdateDog_Age);
-        EditText updatein = findViewById(R.id.UpdateDog_In);
-        EditText updateout = findViewById(R.id.UpdateDog_Out);
-        EditText updatepackno = findViewById(R.id.UpdatePackgeNo);
 
-        updatename.setText(dogname2);
-        updatebreed.setText(dogbreed2);
-        updateage.setText(dogage2);
-        updatein.setText(dogin2);
-        updateout.setText(dogout2);
-        updatepackno.setText(dogpack2);
+        EditText daycaredogname = findViewById(R.id.UpdateDog_Name);
+        EditText daycaredogbreed = findViewById(R.id.UpdateDog_Breed);
+        EditText daycaredogage = findViewById(R.id.UpdateDog_Age);
+        EditText daycaredogin = findViewById(R.id.UpdateDog_In);
+        EditText daycaredogout = findViewById(R.id.UpdateDog_Out);
+        EditText daycaredogpack = findViewById(R.id.UpdatePackgeNo);
+
+        daycaredogname.setText(Udogname);
+        daycaredogbreed.setText(Udogbreef);
+        daycaredogage.setText(Udogage);
+        daycaredogin.setText(Udogin);
+        daycaredogout.setText(Udogout);
+        daycaredogpack.setText(Udogpack);
 
         button6.setOnClickListener(new View.OnClickListener() {
             @Override

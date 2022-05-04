@@ -231,4 +231,5 @@ edit or remove your puppy
     <string name="radio3">Package 03</string>
     <string name="radio4">Package 04</string>
     <string name="displaypackno">Package No</string>
+    <string name="updatebutton">Update</string>
 </resources>
