@@ -89,7 +89,6 @@
         android:layout_height="37dp"
         android:layout_marginTop="96dp"
         android:background="@drawable/button_drawable"
-        android:onClick="saveBooking"
         android:text="@string/Add_booking"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -126,12 +125,12 @@
         android:id="@+id/Dog_PackageNo"
         android:layout_width="373dp"
         android:layout_height="43dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Package No "
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.236"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Dog_Out" />
 

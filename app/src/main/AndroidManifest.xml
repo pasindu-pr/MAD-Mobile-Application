@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".ListDayCareAll"
+            android:exported="false" />
+        <activity
             android:name=".Calculator"
             android:exported="false" />
         <activity
