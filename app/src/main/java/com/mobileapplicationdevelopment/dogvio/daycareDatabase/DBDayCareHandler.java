@@ -125,4 +125,11 @@ public class DBDayCareHandler extends SQLiteOpenHelper {
 
         return dayCareModules;
     }
+
+    //delete booking
+    public void deleteBooking(int id){
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+          sqLiteDatabase.delete(TABLE_NAME,COLUMN_NAME_ID+" =?",new String[]{String.valueOf(id)});
+          sqLiteDatabase.close();
+    }
 }
