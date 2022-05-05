@@ -77,7 +77,10 @@ public class ListDayCareAll extends AppCompatActivity {
                 builder.setPositiveButton("Finished", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int which) {
+                           dayCareModule.setFinished(System.currentTimeMillis());
+                           dbdaycarehandler.updatesingleBooking(dayCareModule);
                             startActivity(new Intent(context,ListDayCareAll.class));
+
                     }
                 });
                 builder.setNegativeButton("Delete Booking", new DialogInterface.OnClickListener() {
@@ -90,7 +93,10 @@ public class ListDayCareAll extends AppCompatActivity {
                 builder.setNeutralButton("Update Booking", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int  which) {
-                        startActivity(new Intent(context,Update_Booking.class));
+                        Intent intent = new Intent(context,Update_Booking.class);
+                        intent.putExtra("keyid",String.valueOf(dayCareModule.getId()));
+                        startActivity(intent);
+
                     }
                 });
                 builder.show();

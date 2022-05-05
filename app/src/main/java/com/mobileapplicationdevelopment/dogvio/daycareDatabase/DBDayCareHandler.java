@@ -5,9 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Build;
-
-import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,7 +60,7 @@ public class DBDayCareHandler extends SQLiteOpenHelper {
     }
 
     /*add booking*/
-    public void addBooking( DayCareModule simpledaycare){
+    public int addBooking(DayCareModule simpledaycare){
             SQLiteDatabase sqLiteDatabase = getWritableDatabase();
 
             ContentValues contentValues = new ContentValues();
@@ -82,6 +79,7 @@ public class DBDayCareHandler extends SQLiteOpenHelper {
            //close database
            sqLiteDatabase.close();
 
+        return 0;
     }
 
 
@@ -132,4 +130,62 @@ public class DBDayCareHandler extends SQLiteOpenHelper {
           sqLiteDatabase.delete(TABLE_NAME,COLUMN_NAME_ID+" =?",new String[]{String.valueOf(id)});
           sqLiteDatabase.close();
     }
+
+    //getsingaltodo
+    public DayCareModule getsingalBooking(int id) {
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.query(TABLE_NAME, new String[]{COLUMN_NAME_ID,
+                COLUMN_NAME_DOG_NAME,
+                COLUMN_NAME_BREED,
+                COLUMN_NAME_DOG_AGE,
+                COLUMN_NAME_DATE_IN,
+                COLUMN_NAME_DATE_OUT,
+                COLUMN_NAME_PACKAGEDOG,
+                COLUMN_NAME_STARTED,
+                COLUMN_NAME_FINISHED}, COLUMN_NAME_ID + "= ?", new String[]{String.valueOf(id)}, null, null, null);
+
+        DayCareModule dayCareModule;
+        if (cursor != null) {
+            cursor.moveToFirst();
+            dayCareModule = new DayCareModule(
+                    cursor.getInt(0),
+                    cursor.getString(1),
+                    cursor.getString(2),
+                    cursor.getString(3),
+                    cursor.getString(4),
+                    cursor.getString(5),
+                    cursor.getString(6),
+                    cursor.getLong(7),
+                    cursor.getLong(8)
+
+            );
+            return dayCareModule;
+
+        }
+        return null;
+    }
+
+    /*update single booking*/
+    public int updatesingleBooking(DayCareModule simpledaycare) {
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(COLUMN_NAME_DOG_NAME, simpledaycare.getBedogname());
+        contentValues.put(COLUMN_NAME_BREED, simpledaycare.getBedogbreed());
+        contentValues.put(COLUMN_NAME_DOG_AGE, simpledaycare.getBedogage());
+        contentValues.put(COLUMN_NAME_DATE_IN, simpledaycare.getBedogin());
+        contentValues.put(COLUMN_NAME_DATE_OUT, simpledaycare.getBedogout());
+        contentValues.put(COLUMN_NAME_PACKAGEDOG, simpledaycare.getBedogpackageno());
+        contentValues.put(COLUMN_NAME_STARTED, simpledaycare.getStarted());
+        contentValues.put(COLUMN_NAME_FINISHED, simpledaycare.getFinished());
+
+        int status = sqLiteDatabase.update(TABLE_NAME, contentValues, COLUMN_NAME_ID + " = ?",
+                new String[]{String.valueOf(simpledaycare.getId())});
+
+        sqLiteDatabase.close();
+        return status;
+    }
+
+
 }

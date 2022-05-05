@@ -62,7 +62,11 @@ public class Booking_DayCare extends AppCompatActivity {
                 DayCareModule simpledaycare = new DayCareModule(adddogname, adddogbreed, adddogage, adddogin, adddogout, addpackage,
                                                                started,0);
 
-                dbDayCareHandler.addBooking(simpledaycare);
+                int state = dbDayCareHandler.addBooking(simpledaycare);
+
+                if(state > 0){
+                    Toast.makeText(Booking_DayCare.this , "Data inserted sucessfully" , Toast.LENGTH_LONG).show();
+                }
 
                 startActivity(new Intent(context,ListDayCareAll.class));
 
