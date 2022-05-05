@@ -86,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/UpdateDog_Name" />
 
     <Button
-        android:id="@+id/addBooking"
+        android:id="@+id/updatebooking"
         android:layout_width="323dp"
         android:layout_height="51dp"
         android:layout_marginTop="84dp"
