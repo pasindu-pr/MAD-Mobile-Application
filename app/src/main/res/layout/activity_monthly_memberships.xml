@@ -212,7 +212,18 @@
             android:layout_marginLeft="150dp"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/Next" />
+            android:background="@drawable/button_drawable"
+            android:text="Booking...." />
+
+        <Button
+            android:id="@+id/Gocalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_drawable"
+            android:layout_marginBottom="10dp"
+            android:text="@string/cal_butn1" />
 
 
     </LinearLayout>

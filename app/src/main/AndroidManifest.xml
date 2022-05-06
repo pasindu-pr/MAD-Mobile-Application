@@ -16,9 +16,6 @@
             android:name=".Calculator"
             android:exported="false" />
         <activity
-            android:name=".DayCareBookingHistory"
-            android:exported="false" />
-        <activity
             android:name=".HealthCare_Details_Update"
             android:exported="false" />
         <activity
@@ -89,9 +86,6 @@
         <activity
             android:name=".Doctor_Booking_main"
             android:exported="true" />
-        <activity
-            android:name=".ContactUs_Page"
-            android:exported="false" />
         <activity
             android:name=".Update_Booking"
             android:exported="false" />

@@ -11,7 +11,8 @@ import android.widget.Button;
 public class Monthly_Memberships extends AppCompatActivity {
 
 
-    Button button4;
+    Button bookingGo;
+    Button calculatorGo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +25,24 @@ public class Monthly_Memberships extends AppCompatActivity {
         actionBar1.setDisplayHomeAsUpEnabled(true);
 
 
-        button4 = findViewById(R.id.GoBook);
+        bookingGo = findViewById(R.id.GoBook);
+        calculatorGo = findViewById(R.id.Gocalculator);
 
 
-        button4.setOnClickListener(new View.OnClickListener() {
+       bookingGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent4 = new Intent(getApplicationContext(),Booking_DayCare.class);
                 startActivity(intent4);
             }
         });
+
+       calculatorGo.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent5 = new Intent(getApplicationContext(),Calculator.class);
+               startActivity(intent5);
+           }
+       });
     }
 }

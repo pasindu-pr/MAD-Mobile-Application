@@ -71,6 +71,7 @@ public class ListDayCareAll extends AppCompatActivity {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("Booking Changes");
+
                 //builder.setMessage(dayCareModule.getBedogage());
                 //builder.setMessage(dayCareModule.getBedogout());
 
@@ -97,6 +98,13 @@ public class ListDayCareAll extends AppCompatActivity {
                         intent.putExtra("keyid",String.valueOf(dayCareModule.getId()));
                         startActivity(intent);
 
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.setOnShowListener(new DialogInterface.OnShowListener() {
+                    @Override
+                    public void onShow(DialogInterface dialogInterface) {
+                        dialog.getWindow().setBackgroundDrawableResource(R.color.purple_700);
                     }
                 });
                 builder.show();
