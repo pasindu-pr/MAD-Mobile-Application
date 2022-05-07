@@ -81,8 +81,4 @@ public class Booking_DayCare extends AppCompatActivity {
         });
 
     }
-
-
-
-
 }

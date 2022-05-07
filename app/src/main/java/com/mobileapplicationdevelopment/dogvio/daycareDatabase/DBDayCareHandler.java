@@ -5,6 +5,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
+
+import com.mobileapplicationdevelopment.dogvio.Booking_DayCare;
+import com.mobileapplicationdevelopment.dogvio.ListDayCareAll;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,8 +35,8 @@ public class DBDayCareHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase dbdaycare) {
-        //add data to database
 
+        //add data to database
         String TABLE_CREATE_QUERYDAYCARE = "CREATE TABLE " + TABLE_NAME +" "+
                 "("
                 +COLUMN_NAME_ID+ " INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -59,7 +63,7 @@ public class DBDayCareHandler extends SQLiteOpenHelper {
            onCreate(dbdaycare);
     }
 
-    /*add booking*/
+    /*Add booking*/
     public int addBooking(DayCareModule simpledaycare){
             SQLiteDatabase sqLiteDatabase = getWritableDatabase();
 
@@ -83,7 +87,7 @@ public class DBDayCareHandler extends SQLiteOpenHelper {
     }
 
 
-    //count booking count
+    /*count history booking - calculation*/
      public int countBooking(){
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
         String query = "SELECT * FROM "+ TABLE_NAME;
@@ -92,7 +96,7 @@ public class DBDayCareHandler extends SQLiteOpenHelper {
          return cursor.getCount();
     }
 
-    //Get All booking history
+    /*Get All daycare booking history*/
     public List <DayCareModule> getAllBookingHistory(){
 
         List<DayCareModule> dayCareModules = new ArrayList<>();
@@ -124,14 +128,18 @@ public class DBDayCareHandler extends SQLiteOpenHelper {
         return dayCareModules;
     }
 
-    //delete booking
+
+
+    /*Delete booking new or old bookings*/
     public void deleteBooking(int id){
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
           sqLiteDatabase.delete(TABLE_NAME,COLUMN_NAME_ID+" =?",new String[]{String.valueOf(id)});
           sqLiteDatabase.close();
     }
 
-    //getsingaltodo
+
+
+    /*Get Singale Booking*/
     public DayCareModule getsingalBooking(int id) {
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         Cursor cursor = sqLiteDatabase.query(TABLE_NAME, new String[]{COLUMN_NAME_ID,

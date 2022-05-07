@@ -2,6 +2,8 @@ package com.mobileapplicationdevelopment.dogvio;
 
 import static android.widget.AdapterView.*;
 
+import static com.mobileapplicationdevelopment.dogvio.R.style.MyDialogTheme;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
@@ -9,6 +11,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -71,15 +74,20 @@ public class ListDayCareAll extends AppCompatActivity {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("Booking Changes");
+                builder.setTitle( Html.fromHtml("<font color='#ff3300'>Booking Changes</font>"));
+                //builder.setBackgroundColor(getResources().getColor(R.color.purple_700));
 
                 //builder.setMessage(dayCareModule.getBedogage());
                 //builder.setMessage(dayCareModule.getBedogout());
+
+                //AlertDialog alertDialog = new AlertDialog.Builder(context,R.style.MyDialogTheme).create();
 
                 builder.setPositiveButton("Finished", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int which) {
                            dayCareModule.setFinished(System.currentTimeMillis());
                            dbdaycarehandler.updatesingleBooking(dayCareModule);
+                        //dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(neededColor);
                             startActivity(new Intent(context,ListDayCareAll.class));
 
                     }
@@ -100,13 +108,13 @@ public class ListDayCareAll extends AppCompatActivity {
 
                     }
                 });
-                AlertDialog dialog = builder.create();
+               /* AlertDialog dialog = builder.create();
                 dialog.setOnShowListener(new DialogInterface.OnShowListener() {
                     @Override
                     public void onShow(DialogInterface dialogInterface) {
-                        dialog.getWindow().setBackgroundDrawableResource(R.color.purple_700);
+                        dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(MyDialogTheme);
                     }
-                });
+                });*/
                 builder.show();
             }
         });

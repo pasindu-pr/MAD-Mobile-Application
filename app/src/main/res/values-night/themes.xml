@@ -13,4 +13,8 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/purple_light</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/purple_500</item>
+    </style>
 </resources>
