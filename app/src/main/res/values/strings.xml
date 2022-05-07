@@ -195,7 +195,7 @@ So We will display hime to the others! </string>
     <string name="social_add_form_dog_breed_hint"> Enter Breed </string>
 
     <string name="social_add_form_dog_dob_label"> Date of Birth </string>
-    <string name="social_add_form_dog_dob_hint"> Enter date of birth </string>
+    <string name="social_add_form_dog_dob_hint"> Enter date of birth in YYYY/MM/DD format </string>
 
     <string name="social_add_form_dog_sex_label"> Sex </string>
     <string name="social_add_form_dog_sex_hint"> Enter sex </string>
@@ -230,4 +230,6 @@ edit or remove your puppy
     <string name="socialized_pets">Your pets on social</string>
     <string name="radio3">Package 03</string>
     <string name="radio4">Package 04</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
