@@ -47,7 +47,7 @@ public class HealthCare_Welcome extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(getApplicationContext(), HealthCare_MealList.class);
+                Intent intent1 = new Intent(getApplicationContext(), HealthCare_MealNew.class);
                 startActivity(intent1);
             }
         });
