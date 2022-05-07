@@ -21,12 +21,14 @@
 
         <ImageView
             android:id="@+id/doc_page2_img"
-            android:layout_width="398dp"
-            android:layout_height="200dp"
+            android:layout_width="336dp"
+            android:layout_height="202dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="51dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="21dp"
             app:srcCompat="@drawable/vet1" />
 
         <TextView
@@ -36,7 +38,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="3dp"
-            android:layout_marginEnd="182dp"
+            android:layout_marginEnd="154dp"
             android:layout_weight=".5"
             android:fontFamily="@font/abril_fatface"
             android:shadowColor="#000000"
@@ -49,12 +51,15 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout3"
-        android:layout_width="407dp"
-        android:layout_height="120dp"
+        android:layout_width="362dp"
+        android:layout_height="109dp"
+        android:layout_margin="20dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/doc_text_back"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout6"
@@ -63,7 +68,7 @@
         <TextView
             android:id="@+id/doc_name1"
             android:layout_width="wrap_content"
-            android:layout_height="58dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_marginStart="10dp"
             android:fontFamily="@font/abril_fatface"
@@ -75,27 +80,25 @@
         <Button
             android:id="@+id/see_more_1"
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/doc_name1"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="-12dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
             android:background="#00000000"
             android:text="@string/see_more_1"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="DuplicateSpeakableTextCheck" />
+            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/doc_image1"
 
-            android:layout_width="98dp"
-            android:layout_height="110dp"
+            android:layout_width="56dp"
+            android:layout_height="84dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="143dp"
+            android:layout_marginStart="117dp"
             android:layout_marginEnd="6dp"
             android:layout_toEndOf="@+id/see_more_1"
             android:src="@drawable/doctor2" />
@@ -103,13 +106,16 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="407dp"
-        android:layout_height="120dp"
+        android:layout_width="362dp"
+        android:layout_height="109dp"
+        android:layout_margin="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/doc_text_back"
         app:barrierMargin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
@@ -141,20 +147,21 @@
             android:background="#00000000"
             android:text="@string/see_more2"
             android:textColor="@color/white"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textSize="20sp" />
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/doc_image2"
-            android:layout_width="93dp"
-            android:layout_height="105dp"
+            android:layout_width="wrap_content"
+            android:layout_height="92dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="173dp"
+            android:layout_marginStart="141dp"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="4dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="7dp"
             android:layout_toEndOf="@+id/Doc_page2_doc2_Name"
             android:src="@drawable/doctor1"
             tools:ignore="ImageContrastCheck" />
@@ -162,19 +169,20 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="407dp"
-        android:layout_height="120dp"
+        android:id="@+id/relativeLayout7"
+        android:layout_width="362dp"
+        android:layout_height="109dp"
         android:layout_margin="20dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/doc_text_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
         <TextView
             android:id="@+id/doc_name3"
@@ -203,16 +211,17 @@
             android:background="#00000000"
             android:text="@string/see_more_3"
             android:textColor="@color/white"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textSize="20sp" />
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/doc_image3"
-            android:layout_width="87dp"
-            android:layout_height="110dp"
+            android:layout_width="58dp"
+            android:layout_height="91dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="151dp"
+            android:layout_marginStart="124dp"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="4dp"
             android:layout_toEndOf="@+id/see_more_3"

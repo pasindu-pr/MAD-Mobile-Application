@@ -39,8 +39,6 @@ public class Doctor_Time_Picking_data_page extends AppCompatActivity {
         DocActionBar5.setDisplayHomeAsUpEnabled(true);
 
         Button Button1a = findViewById(R.id.doc_page4_btn1);
-        Button Button2a = findViewById(R.id.doc_page4_btn2);
-        Button Button3a = findViewById(R.id.doc_page4_btn3);
         Dialog nDialog = new Dialog(this);
 
 
@@ -50,7 +48,7 @@ public class Doctor_Time_Picking_data_page extends AppCompatActivity {
         TextView textVD = findViewById(R.id.doc_page4_text1a);
         textVD.setText(Drname);
 
-        String dogCount = getIntent().getStringExtra ("DogCount");
+        String dogCount = getIntent().getStringExtra ("dogCount");
         TextView textDC = findViewById(R.id.doc_page4_text4a);
         textDC.setText(dogCount);
 
@@ -63,25 +61,6 @@ public class Doctor_Time_Picking_data_page extends AppCompatActivity {
         textV2.setText(appointmentTime);
 
 
-
-
-        Button2a.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent2 = new Intent(Doctor_Time_Picking_data_page.this,Doctor_Time_Picking_page.class);
-                startActivity(intent2);
-            }
-        });
-
-        Button3a.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                nDialog.setContentView(R.layout.activity_doctor_delete_popup_msg);
-                nDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                Intent intent3 = new Intent(Doctor_Time_Picking_data_page.this,Doctor_delete_popup_msg.class);
-                startActivity(intent3);
-            }
-        });
     }
     public int mult(View view){
         TextView Txt1 = (TextView)findViewById(R.id.doc_page4_text4a);

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Doctor_Booking_main"
-    android:background="@drawable/doc_background">
+    android:background="@drawable/doc_background"
+    tools:context=".Doctor_Booking_main">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout6"
@@ -15,43 +15,64 @@
         android:layout_marginEnd="4dp"
         android:background="@drawable/ic_docwave"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">>
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/doc_pag1_img"
-            android:layout_width="401dp"
-            android:layout_height="335dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="378dp"
+            android:layout_height="353dp"
             android:layout_marginTop="16dp"
-
             android:src="@drawable/doctor5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <Button
         android:id="@+id/doc_page1_btn"
-        android:layout_width="409dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="365dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/doc_button1"
         android:fontFamily="sans-serif-black"
         android:text="@string/doc_page1_btn"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doc_page1_disc"
-        app:layout_constraintVertical_bias="0.342" />
+        app:layout_constraintVertical_bias="0.102" />
 
-    <TextView
-        android:id="@+id/doc_page1_disc"
-        android:layout_width="370dp"
-        android:layout_height="175dp"
+    <Button
+        android:id="@+id/doc_page1_btn2"
+        android:layout_width="365dp"
+        android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/doc_button1"
+        android:fontFamily="sans-serif-black"
+        android:text="View Appoinments"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc_page1_btn"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <TextView
+        android:id="@+id/doc_page1_disc"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/doc_text_background_2"
         android:fontFamily="@font/abril_fatface"
         android:gravity="center"
@@ -59,9 +80,8 @@
         android:textColor="@color/purple_500"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/doc_page1_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout6" />
 
