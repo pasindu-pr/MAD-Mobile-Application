@@ -29,12 +29,6 @@ public class Social_DogsList extends AppCompatActivity {
     DAOSocialDog daoSocialDog = new DAOSocialDog();
     ArrayList<SocialDog> socialDogs = new ArrayList<SocialDog>();
 
-    private void onDogListCardClick(){
-        Intent intent = new Intent(this, Social_DogDetails.class);
-        startActivity(intent);
-    }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,25 +36,10 @@ public class Social_DogsList extends AppCompatActivity {
         actionBar.hide();
         setContentView(R.layout.activity_social_dogs_list);
 
-
         recyclerView = findViewById(R.id.socialDogListRecycleView);
-
-        recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
-            @Override
-            public boolean onInterceptTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
-                return false;
-            }
-
-            @Override
-            public void onTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
-
-            }
-
-            @Override
-            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-
-            }
-        });
+        SocialDogListAdapter socialDogListAdapter = new SocialDogListAdapter(getApplicationContext(), socialDogs);
+        recyclerView.setAdapter(socialDogListAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
         daoSocialDog.getDatabaseReference().addValueEventListener(new ValueEventListener() {
             @Override
@@ -72,12 +51,8 @@ public class Social_DogsList extends AppCompatActivity {
                         socialDogs.add(socialDog);
                     }
 
-                    SocialDogListAdapter socialDogListAdapter = new SocialDogListAdapter(getApplicationContext(), socialDogs);
-                    recyclerView.setAdapter(socialDogListAdapter);
-                    recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+                    socialDogListAdapter.notifyDataSetChanged();
                 }
-
-
             }
 
             @Override

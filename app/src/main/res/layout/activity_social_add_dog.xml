@@ -140,6 +140,45 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/dogBreedLabel" />
 
+            <TextView
+                android:id="@+id/dogColourInputLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/social_dog_color_label"
+                android:textColor="@color/purple_500"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dogBreedInput" />
+
+            <EditText
+                android:id="@+id/dogColourInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="@drawable/social_rouded_input"
+                android:ems="10"
+                android:hint="@string/social_add_form_dog_color_label"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/purple_500"
+                android:textColorHint="#546E7A"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dogColourInputLabel" />
 
             <TextView
                 android:id="@+id/dogAgeInputLabel"
@@ -156,7 +195,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dogBreedInput" />
+                app:layout_constraintTop_toBottomOf="@+id/dogColourInput" />
 
             <EditText
                 android:id="@+id/dogDobInput"

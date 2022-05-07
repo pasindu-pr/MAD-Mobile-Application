@@ -12,10 +12,13 @@ public class SocialDog {
     private String description;
     private double longtitude;
     private double latitude;
+    private int dogId;
+    String color;
+
 
     public SocialDog(String name, String breed, String sex, int age,
                      String contactNumber, String image, String description,
-                     double longtitude, double latitude) {
+                     double longtitude, double latitude, int id, String color) {
         this.name = name;
         this.breed = breed;
         this.sex = sex;
@@ -25,6 +28,8 @@ public class SocialDog {
         this.description = description;
         this.longtitude = longtitude;
         this.latitude = latitude;
+        this.dogId = id;
+        this.color = color;
     }
 
     public SocialDog(){}
@@ -99,5 +104,22 @@ public class SocialDog {
 
     public void setLatitude(double latitude) {
         this.latitude = latitude;
+    }
+
+    public int getId() {
+        return dogId;
+    }
+
+    public void setId(int id) {
+        this.dogId = id;
+    }
+
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }

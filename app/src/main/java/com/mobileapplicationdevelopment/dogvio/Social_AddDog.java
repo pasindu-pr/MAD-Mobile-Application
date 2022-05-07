@@ -43,6 +43,7 @@ public class Social_AddDog extends AppCompatActivity {
     EditText description;
     Double latitude;
     Double longtitude;
+    EditText dogColour;
 
     //    Button
     AppCompatButton addDogSubmitButton;
@@ -64,6 +65,7 @@ public class Social_AddDog extends AppCompatActivity {
         int age = 0;
 //        Dog's age calculation - Calculation 1
         String[] dateOfBirthSplitArray = dob.split("/");
+        String dogColour = this.dogColour.getText().toString();
 
      try {
          age = Period.between(
@@ -77,8 +79,10 @@ public class Social_AddDog extends AppCompatActivity {
          Log.e("ExceptionTag", e.getMessage(), e);
      }
 
+        int randomNum = (int)(Math.random() * 5000000);
+
         SocialDog socialDog = new SocialDog(dogName, breed, sex, age, contactNumber,
-                image, description, longtitude, latitude);
+                image, description, longtitude, latitude, randomNum, dogColour);
 
         //    Firebase Data Reference
         DAOSocialDog firebaseDog = new DAOSocialDog();
@@ -134,6 +138,7 @@ public class Social_AddDog extends AppCompatActivity {
         imageLink = findViewById(R.id.imageLinkInput);
         description = findViewById(R.id.dogDescriptionInput);
         addDogSubmitButton = findViewById(R.id.addDogSubmitButton);
+        dogColour = findViewById(R.id.dogColourInput);
 
 
         addDogSubmitButton.setOnClickListener(new View.OnClickListener() {

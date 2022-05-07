@@ -195,6 +195,7 @@ So We will display hime to the others! </string>
     <string name="social_add_form_dog_breed_hint"> Enter Breed </string>
 
     <string name="social_add_form_dog_dob_label"> Date of Birth </string>
+    <string name="social_add_form_dog_color_label"> Colour of the dog </string>
     <string name="social_add_form_dog_dob_hint"> Enter date of birth in YYYY/MM/DD format </string>
 
     <string name="social_add_form_dog_sex_label"> Sex </string>
