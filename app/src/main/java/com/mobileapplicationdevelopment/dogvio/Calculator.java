@@ -67,10 +67,16 @@ public class Calculator extends AppCompatActivity {
         String vlaue1 = ed_Hours.getText().toString();
         String vlaue2 = ed_dates.getText().toString();
 
-        if(TextUtils.isEmpty(vlaue1)){
-            Toast.makeText(this , "Fileds Houre is Empty" , Toast.LENGTH_LONG).show();
-        }else if(TextUtils.isEmpty(vlaue2)){
-            Toast.makeText(this , "Fileds Dayes is Empty" , Toast.LENGTH_LONG).show();
+        if(!vlaue1.matches("[0-9]")){
+            Toast.makeText(this , "Enter Numbers For hours Only " , Toast.LENGTH_LONG).show();
+        }else if(vlaue1.isEmpty()){
+            Toast.makeText(this , "Fill Hours Field " , Toast.LENGTH_LONG).show();
+        }else if(vlaue2.isEmpty()){
+            Toast.makeText(this , "Fill Date Field " , Toast.LENGTH_LONG).show();
+        }else if(!vlaue2.matches("[0-9]")){
+            Toast.makeText(this , "Enter Numbers For Date Only" , Toast.LENGTH_LONG).show();
+        }else if(vlaue2.isEmpty() && vlaue1.isEmpty()){
+            Toast.makeText(this , "Both Field are empty" , Toast.LENGTH_LONG).show();
         }else{
             Float hourValue= Float.parseFloat(vlaue1);
             Float dayValue= Float.parseFloat(vlaue2);
@@ -84,7 +90,7 @@ public class Calculator extends AppCompatActivity {
             }else if(rd_pack4.isChecked()){
                 val=  packagePrice.getpackagePriceFour( hourValue,dayValue);
             }else{
-                Toast.makeText(this , "Select the ragio button" , Toast.LENGTH_LONG).show();
+                Toast.makeText(this , "Select the radio button" , Toast.LENGTH_LONG).show();
             }
             amount_answer.setText(new Float(val).toString());
         }

@@ -65,8 +65,10 @@ public class Booking_DayCare extends AppCompatActivity {
                     Toast.makeText(Booking_DayCare.this , "Dog Name Empty " , Toast.LENGTH_LONG).show();
                 }else if(adddogbreed.isEmpty()){
                     Toast.makeText(Booking_DayCare.this, " Dog Breed Empty" , Toast.LENGTH_LONG).show();
+                }else  if(!adddogage.matches("[0-9]")){
+                    Toast.makeText(Booking_DayCare.this, "Enter numbers only for age" , Toast.LENGTH_LONG).show();
                 }else if(adddogin .isEmpty()){
-                    Toast.makeText(Booking_DayCare.this , " DogIn Field Empty" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(Booking_DayCare.this , "DogIn Field Empty" , Toast.LENGTH_LONG).show();
                 }else {
                     DayCareModule simpledaycare = new DayCareModule(adddogname, adddogbreed, adddogage, adddogin, adddogout, addpackage,
                             started,0);
