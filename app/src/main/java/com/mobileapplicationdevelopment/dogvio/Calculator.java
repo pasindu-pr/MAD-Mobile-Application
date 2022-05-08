@@ -20,7 +20,7 @@ public class Calculator extends AppCompatActivity {
         actionBar9.setDisplayShowHomeEnabled(true);
         actionBar9.setDisplayHomeAsUpEnabled(true);
 
-        button1 = findViewById(R.id.button12);
+        button1 = findViewById(R.id.socialDogDetailsCallOwnerButton);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
