@@ -15,11 +15,13 @@ public class SocialDog {
     private int dogId;
     String color;
     private String userID;
+    private String birthdate;
 
 
     public SocialDog(String name, String breed, String sex, int age,
                      String contactNumber, String image, String description,
-                     double longtitude, double latitude, int id, String color, String userID) {
+                     double longtitude, double latitude, int id, String color,
+                     String userID, String birthdate) {
         this.name = name;
         this.breed = breed;
         this.sex = sex;
@@ -32,6 +34,7 @@ public class SocialDog {
         this.dogId = id;
         this.color = color;
         this.userID = userID;
+        this.birthdate = birthdate;
     }
 
     public String getUserID() {
@@ -131,5 +134,13 @@ public class SocialDog {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getBirthdate() {
+        return birthdate;
+    }
+
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
     }
 }

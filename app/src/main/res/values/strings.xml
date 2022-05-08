@@ -186,7 +186,12 @@
     </string>
 
     <string name="social_add_your_dog_headline"> Add your dog </string>
+    <string name="social_update_your_dog_headline"> Update your dog </string>
+
     <string name="social_add_your_dog_small_description"> Add your dog to the community.
+So We will display him to the others! </string>
+
+    <string name="social_update_your_dog_small_description"> Add your dog to the community.
 So We will display hime to the others! </string>
 
     <string name="social_add_form_dog_name_label"> Name </string>
