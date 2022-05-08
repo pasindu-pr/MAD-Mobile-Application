@@ -17,6 +17,7 @@
 
 
         <activity
+            android:name=".HealthCareMealList"
             android:name=".Doctor_Edit_Appontment"
             android:exported="false" />
         <activity
@@ -30,9 +31,6 @@
             android:exported="false" />
         <activity
             android:name=".HealthCare_MealList_Modify"
-            android:exported="false" />
-        <activity
-            android:name=".HealthCare_MealList"
             android:exported="false" />
         <activity
             android:name=".HealthCare_Details"

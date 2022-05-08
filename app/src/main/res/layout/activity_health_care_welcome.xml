@@ -8,35 +8,16 @@
     tools:context=".HealthCare_Welcome">
 
     <Button
-        android:id="@+id/btn_Meal"
-        android:layout_width="170dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="40dp"
+        android:id="@+id/details"
+        android:layout_width="156dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="72dp"
         android:background="@drawable/button_drawable"
-        android:text="@string/btn_Meal"
-        android:textColor="@color/black"
-
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
+        android:text="Details"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Details" />
-
-    <Button
-        android:id="@+id/btn_BMI"
-        android:layout_width="170dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="108dp"
-        android:background="@drawable/button_drawable"
-        android:text="@string/btn_BMI"
-        android:textColor="@color/black"
-
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_wc" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/img_wc"
@@ -50,18 +31,27 @@
         app:srcCompat="@drawable/health1" />
 
     <Button
-        android:id="@+id/btn_Details"
-        android:layout_width="170dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="16dp"
+        android:id="@+id/addMeal"
+        android:layout_width="156dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="40dp"
         android:background="@drawable/button_drawable"
-        android:text="@string/btn_Details"
-        android:textColor="@color/black"
+        android:text="Add Meal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_wc"
+        app:layout_constraintVertical_bias="0.459" />
 
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
+    <Button
+        android:id="@+id/BMI"
+        android:layout_width="160dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/button_drawable"
+        android:text="BMI"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toEndOf="@+id/addMeal"
         app:layout_constraintTop_toBottomOf="@+id/img_wc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

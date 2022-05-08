@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class HealthCare_Details extends AppCompatActivity {
 
-    Button button7;
+    Button button7, button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,11 +23,20 @@ public class HealthCare_Details extends AppCompatActivity {
 
 
         button7 = findViewById(R.id.btn_detail_update);
+        button2 = findViewById(R.id.welcome2);
 
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(getApplicationContext(), HealthCare_Details_Update.class);
+                startActivity(intent1);
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(getApplicationContext(), HealthCare_Welcome.class);
                 startActivity(intent1);
             }
         });
