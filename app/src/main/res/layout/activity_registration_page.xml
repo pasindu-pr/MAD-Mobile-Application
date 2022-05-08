@@ -70,7 +70,7 @@
             app:layout_constraintTop_toBottomOf="@+id/loginPageText" />
 
         <EditText
-            android:id="@+id/username_input"
+            android:id="@+id/registrationpageusernameinput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -109,10 +109,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/username_input" />
+            app:layout_constraintTop_toBottomOf="@+id/registrationpageusernameinput" />
 
         <EditText
-            android:id="@+id/loginPageEmailInput"
+            android:id="@+id/registrationpagEmailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -148,10 +148,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginPageEmailInput" />
+            app:layout_constraintTop_toBottomOf="@+id/registrationpagEmailInput" />
 
         <EditText
-            android:id="@+id/loginPagePasswordInput"
+            android:id="@+id/registrationPagePasswordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -174,7 +174,7 @@
             app:layout_constraintTop_toBottomOf="@+id/passwordLabel" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/loginButton"
+            android:id="@+id/registerButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -188,7 +188,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginPagePasswordInput"
+            app:layout_constraintTop_toBottomOf="@+id/registrationPagePasswordInput"
             tools:ignore="DuplicateSpeakableTextCheck" />
 
         <TextView

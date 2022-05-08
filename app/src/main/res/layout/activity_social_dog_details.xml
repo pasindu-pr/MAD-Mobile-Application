@@ -2,16 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/socialDogDetailsDogBreed"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Social_DogDetails">
 
     <ImageView
         android:id="@+id/socialDogDetailsCoverImage"
-        android:layout_width="wrap_content"
-        android:layout_height="240dp"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
         android:contentDescription="@string/social_dog_description"
-        android:scaleType="matrix"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,11 +25,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/socialbackButtonImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/social_dog_details_back"
-        tools:ignore="ImageContrastCheck"
-        android:contentDescription="@string/socialbackButtonImage" />
+        tools:ignore="ImageContrastCheck" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -41,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/socialDogDetailsCoverImage">
 
         <TextView
-            android:id="@+id/textView46"
+            android:id="@+id/socialDogDetailsDogName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -55,7 +56,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView57"
+            android:id="@+id/socialDogDetailsBreed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -73,7 +74,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#F7CBFF"
-        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintBottom_toTopOf="@+id/socialDogDetailsCallOwnerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
@@ -118,7 +119,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/textView62"
+                            android:id="@+id/socialDogDetailsDogAge"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/social_dog_age"
@@ -228,7 +229,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button12"
+        android:id="@+id/socialDogDetailsCallOwnerButton"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="@color/purple_500"
