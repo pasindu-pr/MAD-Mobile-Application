@@ -114,6 +114,7 @@ public class Social_DogsList extends AppCompatActivity {
                 }
 
 //                Notify the adapter after sorting dogs according to the location
+//                So the adapter will get notified and display the dogs
                 socialDogListAdapter.notifyDataSetChanged();
 
             }

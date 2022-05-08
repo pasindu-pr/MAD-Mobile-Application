@@ -48,7 +48,7 @@
         android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="@string/social_add_your_dog_small_description"
+        android:contentDescription="@string/social_update_your_dog_small_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -28,9 +28,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.mobileapplicationdevelopment.dogvio.data.DAOSocialDog;
 import com.mobileapplicationdevelopment.dogvio.data.SocialDog;
+import com.mobileapplicationdevelopment.dogvio.utils.Validator;
 
 import java.time.LocalDate;
 import java.time.Period;
+
 
 
 public class Social_AddDog extends AppCompatActivity {
@@ -57,7 +59,6 @@ public class Social_AddDog extends AppCompatActivity {
 
 
     private void addDogToTheApplication() {
-
         String dogName = this.dogName.getText().toString();
         String breed = this.dogBreed.getText().toString();
         String dob = this.dogDateOfBirth.getText().toString();
@@ -69,6 +70,36 @@ public class Social_AddDog extends AppCompatActivity {
 //        Dog's age calculation - Calculation 1
         String[] dateOfBirthSplitArray = dob.split("/");
         String dogColour = this.dogColour.getText().toString();
+
+
+//        Validate Inputs
+        Validator validator = new Validator();
+
+        if(!validator.isAlpha(dogName)){
+            showValidateAlert("Name can only include letters. Please enter a valid format");
+            return;
+        }
+
+        if(!validator.isAlpha(breed)){
+            showValidateAlert("Breed can only include letters. Please enter a valid format");
+            return;
+        }
+
+        if(!validator.isValidDate(dob)){
+            showValidateAlert("Birthdate not follow the valid pattern. Please enter a valid format");
+            return;
+        }
+
+        if(!validator.isAlpha(sex)){
+            showValidateAlert("Sex can only include letters. Please enter a valid format");
+            return;
+        }
+
+
+        if(!validator.isValidContactNumber(contactNumber)){
+            showValidateAlert("Contact number can only include numbers. Please enter a valid format");
+            return;
+        }
 
      try {
          age = Period.between(
@@ -102,6 +133,23 @@ public class Social_AddDog extends AppCompatActivity {
         alertDialog.setTitle("Your dog has been added successfully");
         alertDialog.setMessage("Your dog on board! Visitors will see your dog " +
                 "and the interested ones wil contact you!");
+        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Okay",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+        alertDialog.show();
+
+
+    }
+
+
+    private void showValidateAlert(String msg) {
+        AlertDialog alertDialog = new AlertDialog.Builder(Social_AddDog.this, R.style.SocialDogAlertTheme).create();
+        alertDialog.setTitle("Input Validation failed");
+        alertDialog.setMessage(msg);
         alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Okay",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
