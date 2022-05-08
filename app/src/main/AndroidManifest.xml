@@ -2,13 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mobileapplicationdevelopment.dogvio">
 
+<!--    Network and GPS based locations -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
+
+
         <activity
             android:name=".Doctor_Edit_Appontment"
             android:exported="false" />
@@ -50,6 +57,9 @@
             android:exported="true" />
         <activity
             android:name=".Social_DogsList"
+            android:exported="true" />
+        <activity
+            android:name=".SocialUserDogUpdate"
             android:exported="true" />
         <activity
             android:name=".RegistrationPage"
