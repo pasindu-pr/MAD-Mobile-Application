@@ -17,6 +17,12 @@
 
 
         <activity
+            android:name=".Doctor_Edit_Appontment"
+            android:exported="false" />
+        <activity
+            android:name=".doc_all_appointment"
+            android:exported="false" />
+        <activity
             android:name=".HealthCare_Details_Update"
             android:exported="false" />
         <activity
@@ -114,8 +120,10 @@
         <activity
             android:name=".Daycare_Homepage"
             android:exported="true" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+
 </manifest>

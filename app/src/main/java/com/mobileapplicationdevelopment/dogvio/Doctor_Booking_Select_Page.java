@@ -10,6 +10,10 @@ import android.widget.Button;
 
 public class Doctor_Booking_Select_Page extends AppCompatActivity {
 
+    String DrName1, DrName2, DrName3;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,10 +29,23 @@ public class Doctor_Booking_Select_Page extends AppCompatActivity {
         Button Button_BookNow2 = findViewById(R.id.see_more2);
         Button Button_BookNow3 = findViewById(R.id.see_more_3);
 
+        final Intent intent = new Intent(Doctor_Booking_Select_Page.this,Doctor_Time_Picking_page.class);
+        String DrName1 = "DR Rayen";
+        intent.putExtra("DrName", DrName1);
+
+        final Intent intent1 = new Intent(Doctor_Booking_Select_Page.this,Doctor_Time_Picking_page.class);
+        String DrName2 = "DR Chaan";
+        intent1.putExtra("DrName", DrName2);
+
+        final Intent intent2 = new Intent(Doctor_Booking_Select_Page.this,Doctor_Time_Picking_page.class);
+        String DrName3 = "DR Saam";
+        intent2.putExtra("DrName", DrName3);
+
         Button_BookNow1.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Doctor_Booking_Select_Page.this,Doctor_Time_Picking_page.class);
                 startActivity(intent);
             }
         });
@@ -36,16 +53,16 @@ public class Doctor_Booking_Select_Page extends AppCompatActivity {
         Button_BookNow2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Doctor_Booking_Select_Page.this,Doctor_Time_Picking_page.class);
-                startActivity(intent);
+
+                startActivity(intent1);
             }
         });
 
         Button_BookNow3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Doctor_Booking_Select_Page.this,Doctor_Time_Picking_page.class);
-                startActivity(intent);
+
+                startActivity(intent2);
             }
         });
 
