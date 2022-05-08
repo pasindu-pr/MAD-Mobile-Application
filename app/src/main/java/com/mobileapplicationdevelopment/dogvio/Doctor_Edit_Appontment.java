@@ -10,7 +10,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -38,18 +41,29 @@ public class Doctor_Edit_Appontment extends AppCompatActivity {
     private String appointmentTime;
     private Doc_DbHandler doc_dbHandler1;
     private Context context;
-    private long updatedTime;
-    String dateTxt;
-    String timeTxt;
-    String docTxt;
-    String  userNametxt;
-    String dogCountTxt;
+    private String dateTxt;
+    private String timeTxt;
+    private String docTxt;
+    private String  userNametxt;
+    private String dogCountTxt;
 
-    public void DisplayToast2(View view){
-       //Toasty.error(this,"Changes are saved",Toast.LENGTH_SHORT).show();
-       Toast.makeText(Doctor_Edit_Appontment.this,"Changes are saved",Toast.LENGTH_SHORT).show();
 
+    public void myToast(){
+
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.doc_custom_tost_a, (ViewGroup) findViewById(R.id.Doc_tost_a));
+
+
+                TextView toastTxt = layout.findViewById(R.id.toast_text);
+                toastTxt.setText("Changes Saved");
+
+        final Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM, 0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
     }
+
     //On Crate method-------------------------------------------------------------------------------------------------------------------------
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -76,31 +90,22 @@ public class Doctor_Edit_Appontment extends AppCompatActivity {
         userName.setText(Doc_Appoint.getUserName());
         docName.setText(Doc_Appoint.getDrName());
 
-//        System.out.println(id);
-        //**********************************************************
-
-
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                redirect();
-                timeTxt = timeButton.getText().toString();
-                dateTxt = dateButton.getText().toString();
-                docTxt = docName.getText().toString();
-                userNametxt = userName.getText().toString();
-                dogCountTxt = DogCount.getText().toString();
 
-                Doctor_Appointment_Model_Class doc_Appoit_Model = new Doctor_Appointment_Model_Class(Integer.parseInt(id),dateTxt,timeTxt,docTxt,dogCountTxt,userNametxt);
-               int state = doc_dbHandler1.updateAppointment(doc_Appoit_Model);
-                startActivity(new Intent(context,doc_all_appointment.class));
-                DisplayToast2(view);
-            }
+                    timeTxt = timeButton.getText().toString();
+                    dateTxt = dateButton.getText().toString();
+                    docTxt = docName.getText().toString();
+                    userNametxt = userName.getText().toString();
+                    dogCountTxt = DogCount.getText().toString();
+                    Doctor_Appointment_Model_Class doc_Appoit_Model = new Doctor_Appointment_Model_Class(Integer.parseInt(id), dateTxt, timeTxt, docTxt, dogCountTxt, userNametxt);
+                    int state = doc_dbHandler1.updateAppointment(doc_Appoit_Model);
+                    myToast();
+                    startActivity(new Intent(context, doc_all_appointment.class));
+                }
+
         });
-
-
-
-
-
 
         ActionBar DocActionBar7 = getSupportActionBar();
         DocActionBar7.setTitle("Edit Appointment");
@@ -121,9 +126,7 @@ public class Doctor_Edit_Appontment extends AppCompatActivity {
                 date = makeDateString(day, month, year);
                 dateButton.setText(date);
                 //*********************************************************
-
             }
-
         };
 
         Calendar cal = Calendar.getInstance();
@@ -181,10 +184,7 @@ public class Doctor_Edit_Appontment extends AppCompatActivity {
     }
 
 
-
-
     //Time Button
-
 
     int hour, minute;
 
