@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogApp">
         <activity
+            android:name=".HealthCareMealList"
+            android:exported="false" />
+        <activity
             android:name=".HealthCare_Details_Update"
             android:exported="false" />
         <activity
@@ -17,9 +20,6 @@
             android:exported="false" />
         <activity
             android:name=".HealthCare_MealList_Modify"
-            android:exported="false" />
-        <activity
-            android:name=".HealthCare_MealList"
             android:exported="false" />
         <activity
             android:name=".HealthCare_Details"
@@ -104,8 +104,10 @@
         <activity
             android:name=".Daycare_Homepage"
             android:exported="true" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+
 </manifest>

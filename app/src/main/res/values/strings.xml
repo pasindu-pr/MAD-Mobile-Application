@@ -230,4 +230,9 @@ edit or remove your puppy
     <string name="socialized_pets">Your pets on social</string>
     <string name="radio3">Package 03</string>
     <string name="radio4">Package 04</string>
+    <string name="et_age">et_age</string>
+    <string name="et_height">et_height</string>
+    <string name="et_weight">et_weight</string>
+    <string name="rd_btn_male">rd_btn_male</string>
+    <string name="rd_btn_female">rd_btn_female</string>
 </resources>
