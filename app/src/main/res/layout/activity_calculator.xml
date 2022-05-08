@@ -13,64 +13,52 @@
         android:layout_height="608dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093"
+        app:layout_constraintVertical_bias="0.13"
         app:srcCompat="@drawable/border" />
 
     <TextView
         android:id="@+id/calculator"
         android:layout_width="322dp"
         android:layout_height="53dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="44dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/cal_topic"
         android:textColor="#020202"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="#020202"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView60" />
 
     <TextView
         android:id="@+id/textView61"
         android:layout_width="121dp"
         android:layout_height="29dp"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="@string/no_hor"
         android:textColor="#020202"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <TextView
         android:id="@+id/socialDogDetailsDogAge"
         android:layout_width="119dp"
         android:layout_height="29dp"
         android:layout_marginStart="156dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
         android:text="@string/no_day"
         android:textColor="#020202"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_Hours" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/ed_Hours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -87,7 +75,7 @@
         android:layout_width="123dp"
         android:layout_height="31dp"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:text="@string/packag"
         android:textColor="#020202"
         android:textSize="20sp"
@@ -104,23 +92,24 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/cal_buttonPack"
         app:layout_constraintVertical_bias="0.24" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName10"
+        android:id="@+id/amount_answer"
         android:layout_width="220dp"
         android:layout_height="46dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="$"
         android:textColor="#020202"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView64"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/cal_buttonPack"
         android:layout_width="218dp"
         android:layout_height="62dp"
         android:layout_marginTop="12dp"
@@ -128,7 +117,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_dates" />
 
     <Button
         android:id="@+id/socialDogDetailsCallOwnerButton"
@@ -140,10 +129,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+        app:layout_constraintTop_toBottomOf="@+id/amount_answer" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/ed_dates"
         android:layout_width="221dp"
         android:layout_height="44dp"
         android:ems="10"
@@ -152,5 +141,40 @@
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/socialDogDetailsDogAge" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="204dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView60">
+
+        <RadioButton
+            android:id="@+id/rd_pack1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Package 01" />
+
+        <RadioButton
+            android:id="@+id/rd_pack2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="Package 02" />
+
+        <RadioButton
+            android:id="@+id/rd_pack3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Package 03" />
+
+        <RadioButton
+            android:id="@+id/rd_pack4"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:text="Package 04" />
+    </RadioGroup>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

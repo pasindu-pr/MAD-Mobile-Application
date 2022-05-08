@@ -17,6 +17,10 @@
 
 
         <activity
+            android:name=".ListDayCareAll"
+            android:exported="false" />
+        <activity
+            android:name=".Calculator"
             android:name=".HealthCareMealList"
             android:name=".Doctor_Edit_Appontment"
             android:exported="false" />
@@ -94,12 +98,6 @@
         <activity
             android:name=".Doctor_Booking_main"
             android:exported="true" />
-        <activity
-            android:name=".Delete_Booking"
-            android:exported="false" />
-        <activity
-            android:name=".ContactUs_Page"
-            android:exported="false" />
         <activity
             android:name=".Update_Booking"
             android:exported="false" />

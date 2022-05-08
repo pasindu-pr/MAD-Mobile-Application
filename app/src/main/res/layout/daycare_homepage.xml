@@ -27,7 +27,7 @@
         android:layout_width="336dp"
         android:layout_height="55dp"
         android:background="@drawable/button_drawable"
-        android:text="Day Care"
+        android:text="Let' Start"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,13 +38,16 @@
 
     <TextView
         android:id="@+id/textView39"
-        android:layout_width="263dp"
-        android:layout_height="99dp"
+        android:layout_width="370dp"
+        android:layout_height="121dp"
         android:layout_marginTop="56dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Welcome"
-        android:textColor="#000000"
-        android:textSize="60sp"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:text="Welcome To Your Booking Day Care"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

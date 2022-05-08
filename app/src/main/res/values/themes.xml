@@ -14,12 +14,8 @@
         <!-- Customize your theme here. -->
         <item name="android:navigationBarColor">@color/purple_500</item>
     </style>
-
     <style name="SocialDogAlertTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:background">@color/white</item>
         <item name="android:textColor"> @color/purple_500 </item>
-
     </style>
-
-
 </resources>

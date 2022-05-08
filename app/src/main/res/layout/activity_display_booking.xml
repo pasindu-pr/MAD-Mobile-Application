@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayBooking"
-    android:background="@drawable/backgroun">
+    android:background="@drawable/backgroun"
+    tools:context=".DisplayBooking">
 
 
     <ImageView
@@ -34,6 +34,7 @@
         android:layout_width="111dp"
         android:layout_height="23dp"
         android:layout_marginStart="44dp"
+        android:textStyle="bold"
         android:layout_marginTop="256dp"
         android:fontFamily="sans-serif-black"
         android:text="Dog Name:"
@@ -43,16 +44,16 @@
         app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/ddname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginTop="284dp"
         android:fontFamily="sans-serif-black"
-        android:text="Roxy"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
@@ -62,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="16dp"
+        android:textStyle="bold"
         android:fontFamily="sans-serif-black"
         android:text="Breed : "
         android:textColor="#000000"
@@ -70,17 +72,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/ddbreed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-black"
-        android:text="‎German Shepherds"
         android:textColor="#000000"
+        android:textStyle="bold"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/ddname" />
 
     <TextView
         android:id="@+id/textView19"
@@ -90,23 +92,24 @@
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-black"
         android:text="Dog Age: "
+        android:textStyle="bold"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/ddage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginTop="24dp"
+        android:textStyle="bold"
         android:fontFamily="sans-serif-black"
-        android:text="Month 4"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/ddbreed" />
 
     <TextView
         android:id="@+id/textView32"
@@ -114,6 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="20dp"
+        android:textStyle="bold"
         android:fontFamily="sans-serif-black"
         android:text="Day In"
         android:textColor="#000000"
@@ -122,17 +126,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/dddogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
         android:layout_marginTop="28dp"
+        android:textStyle="bold"
         android:fontFamily="sans-serif-black"
-        android:text="12/03/2022"
         android:textColor="#0E0E0E"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView32"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        app:layout_constraintTop_toBottomOf="@+id/ddage" />
 
     <TextView
         android:id="@+id/textView34"
@@ -140,6 +144,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="20dp"
+        android:textStyle="bold"
         android:fontFamily="sans-serif-black"
         android:text="Day Out"
         android:textColor="#0E0E0E"
@@ -148,36 +153,25 @@
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/dddogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-black"
-        android:text="12/03/2022"
+        android:textStyle="bold"
         android:textColor="#0E0E0E"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toEndOf="@+id/textView34"
-        app:layout_constraintTop_toBottomOf="@+id/textView33" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="341dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="72dp"
-        android:background="@drawable/button_drawable"
-        android:text="@string/Next"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+        app:layout_constraintTop_toBottomOf="@+id/dddogin" />
 
     <TextView
         android:id="@+id/textView36"
         android:layout_width="307dp"
         android:layout_height="44dp"
         android:layout_marginTop="24dp"
+        android:textStyle="bold"
         android:text="Booking Summery"
         android:textColor="#0E0E0E"
         android:textSize="34sp"
@@ -185,5 +179,41 @@
         app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/displaypackno"
+        android:textColor="#0E0E0E"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/ddpackageno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="188dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dddogout" />
+
+    <Button
+        android:id="@+id/UpdateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,13 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Monthly_Memberships extends AppCompatActivity {
 
-    Button button3;
-    Button button4;
+
+    Button bookingGo;
+    Button calculatorGo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,23 +29,43 @@ public class Monthly_Memberships extends AppCompatActivity {
         actionBar1.setDisplayHomeAsUpEnabled(true);
 
 
-        button3 = findViewById(R.id.B_button5);
-        button4 = findViewById(R.id.button10);
+        bookingGo = findViewById(R.id.GoBook);
+        calculatorGo = findViewById(R.id.Gocalculator);
 
-        button3.setOnClickListener(new View.OnClickListener() {
+        LayoutInflater layoutInflater = getLayoutInflater();
+        View layout = layoutInflater.inflate(R.layout.custom_toast,(ViewGroup) findViewById(R.id.toast_layout));
+
+        final Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER_VERTICAL,0,0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+
+        LayoutInflater layoutInflater1 = getLayoutInflater();
+        View layout1 = layoutInflater1.inflate(R.layout.customtoastcalculator,(ViewGroup) findViewById(R.id.toast_layout));
+
+        final Toast toast1 = new Toast(getApplicationContext());
+        toast1.setGravity(Gravity.CENTER_VERTICAL,0,0);
+        toast1.setDuration(Toast.LENGTH_LONG);
+        toast1.setView(layout1);
+
+
+       bookingGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent3 = new Intent(getApplicationContext(), Booking_DayCare.class);
-                startActivity(intent3);
-            }
-        });
-
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent4 = new Intent(getApplicationContext(), Calculator.class);
+                toast.show();
+                Intent intent4 = new Intent(getApplicationContext(),Booking_DayCare.class);
                 startActivity(intent4);
+
             }
         });
+
+       calculatorGo.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               toast1.show();
+               Intent intent5 = new Intent(getApplicationContext(),Calculator.class);
+               startActivity(intent5);
+           }
+       });
     }
 }
