@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
 
     <TextView
-        android:id="@+id/textView62"
+        android:id="@+id/socialDogDetailsDogAge"
         android:layout_width="119dp"
         android:layout_height="29dp"
         android:layout_marginStart="156dp"
@@ -131,7 +131,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/socialDogDetailsCallOwnerButton"
         android:layout_width="304dp"
         android:layout_height="45dp"
         android:layout_marginTop="48dp"
@@ -151,6 +151,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView62" />
+        app:layout_constraintTop_toBottomOf="@+id/socialDogDetailsDogAge" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -173,6 +173,7 @@
     <string name="puppuy_name"> Puppy Taby </string>
     <string name="social_puppuy_category"> French Black Puppy </string>
     <string name="social_puppy_call_owner"> Call Owner </string>
+    <string name="social_puppy_add_dog"> Add your dog </string>
     <string name="social_dog_breed_label"> Breed </string>
     <string name="social_dog_age_label"> Age </string>
     <string name="social_dog_age"> 7 </string>
@@ -185,8 +186,12 @@
     </string>
 
     <string name="social_add_your_dog_headline"> Add your dog </string>
+    <string name="social_update_your_dog_headline"> Update your dog </string>
+
     <string name="social_add_your_dog_small_description"> Add your dog to the community.
-So We will display hime to the others! </string>
+So We will display him to the others! </string>
+
+    <string name="social_update_your_dog_small_description"> Update information  of your pet</string>
 
     <string name="social_add_form_dog_name_label"> Name </string>
     <string name="social_add_form_dog_name_hint"> Enter Name </string>
@@ -195,7 +200,8 @@ So We will display hime to the others! </string>
     <string name="social_add_form_dog_breed_hint"> Enter Breed </string>
 
     <string name="social_add_form_dog_dob_label"> Date of Birth </string>
-    <string name="social_add_form_dog_dob_hint"> Enter date of birth </string>
+    <string name="social_add_form_dog_color_label"> Colour of the dog </string>
+    <string name="social_add_form_dog_dob_hint"> Enter date of birth in YYYY/MM/DD format </string>
 
     <string name="social_add_form_dog_sex_label"> Sex </string>
     <string name="social_add_form_dog_sex_hint"> Enter sex </string>
@@ -226,8 +232,11 @@ edit or remove your puppy
     <string name="doctor_booking">Doctor Channeling</string>
     <string name="daycare">Daycare</string>
     <string name="findpets">Find Pets</string>
-    <string name="username">Hey, Pasindu</string>
+    <string name="username">Hey,</string>
+    <string name="userwithemail"> pasindu@email.com </string>
     <string name="socialized_pets">Your pets on social</string>
     <string name="radio3">Package 03</string>
     <string name="radio4">Package 04</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
