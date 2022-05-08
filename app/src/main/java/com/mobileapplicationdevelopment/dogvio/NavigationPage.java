@@ -8,12 +8,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class NavigationPage extends AppCompatActivity {
     private TextView navBarSocialText;
     private  TextView socializedPetsText;
     private TextView dayCarePetsText;
     private  TextView healthCare;
     private TextView doctorBooking;
+    private FirebaseAuth mAuth;
+    private  TextView currentUserEmail;
 
     private void onNavBarSocialTextClick() {
         Intent intent = new Intent(this, Social_DogsList.class);
@@ -50,11 +55,20 @@ public class NavigationPage extends AppCompatActivity {
         actionBar.hide();
         setContentView(R.layout.activity_navigation_page);
 
+
         navBarSocialText = (TextView) findViewById(R.id.navBarSocialPets);
         socializedPetsText = (TextView) findViewById(R.id.socializedPets);
         dayCarePetsText = (TextView) findViewById(R.id.dayCare);
         healthCare = (TextView) findViewById(R.id.healthCare);
         doctorBooking = (TextView) findViewById(R.id.doctorBooking);
+        currentUserEmail = (TextView) findViewById(R.id.currentuserEmails);
+
+        mAuth = FirebaseAuth.getInstance();
+
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            currentUserEmail.setText(currentUser.getEmail());
+        }
 
         navBarSocialText.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -24,6 +24,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.mobileapplicationdevelopment.dogvio.data.DAOSocialDog;
 import com.mobileapplicationdevelopment.dogvio.data.SocialDog;
 
@@ -51,6 +53,7 @@ public class Social_AddDog extends AppCompatActivity {
     //    Get Location Access from GPS
     LocationManager locationManager;
     LocationListener locationListener;
+    private FirebaseAuth mAuth;
 
 
     private void addDogToTheApplication() {
@@ -80,9 +83,10 @@ public class Social_AddDog extends AppCompatActivity {
      }
 
         int randomNum = (int)(Math.random() * 5000000);
+        FirebaseUser currentUser = mAuth.getCurrentUser();
 
         SocialDog socialDog = new SocialDog(dogName, breed, sex, age, contactNumber,
-                image, description, longtitude, latitude, randomNum, dogColour);
+                image, description, longtitude, latitude, randomNum, dogColour, currentUser.getUid());
 
         //    Firebase Data Reference
         DAOSocialDog firebaseDog = new DAOSocialDog();
@@ -128,7 +132,8 @@ public class Social_AddDog extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
         setContentView(R.layout.activity_social_add_dog);
-
+// Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
 
         dogDateOfBirth = findViewById(R.id.dogDobInput);
         dogName = findViewById(R.id.dogNameInput);

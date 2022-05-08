@@ -227,7 +227,8 @@ edit or remove your puppy
     <string name="doctor_booking">Doctor Channeling</string>
     <string name="daycare">Daycare</string>
     <string name="findpets">Find Pets</string>
-    <string name="username">Hey, Pasindu</string>
+    <string name="username">Hey,</string>
+    <string name="userwithemail"> pasindu@email.com </string>
     <string name="socialized_pets">Your pets on social</string>
     <string name="radio3">Package 03</string>
     <string name="radio4">Package 04</string>
