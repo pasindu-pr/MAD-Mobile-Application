@@ -114,24 +114,11 @@
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/btn_modify_delete"
-        android:layout_width="147dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginBottom="112dp"
-        android:background="@drawable/button_drawable"
-        android:text="@string/btn_modify_delete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_modify_modify"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/btn_modify_modify"
         android:layout_width="147dp"
         android:layout_height="54dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/button_drawable"
         android:text="@string/btn_modify_modify"
         app:layout_constraintBottom_toBottomOf="parent"

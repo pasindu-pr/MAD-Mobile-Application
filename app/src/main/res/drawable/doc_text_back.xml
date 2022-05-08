@@ -3,9 +3,19 @@
 
     <item>
         <shape>
+
+            <stroke
+                android:width="5dp"
+                android:color="@color/purple_500" />
             <gradient android:angle="18"
-                android:startColor="#FFFFFF"
-                android:endColor="#d9b3ff"/>
+                android:startColor="#f7e6ff"
+                android:endColor="@color/purple_500"/>
+            <padding
+                android:left="10dp"
+                android:right="10dp"
+                android:bottom="10dp"
+                android:top="10dp" />
+            <corners android:radius="15dp" />
         </shape>
     </item>
 

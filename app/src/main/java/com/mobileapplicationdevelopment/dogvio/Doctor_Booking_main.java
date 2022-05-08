@@ -22,14 +22,23 @@ public class Doctor_Booking_main extends AppCompatActivity {
 
 
         Button button_d1 = findViewById(R.id.doc_page1_btn);
+        Button button_d2 = findViewById(R.id.doc_page1_btn2);
 
         button_d1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Doctor_Booking_main.this,Doctor_Booking_Select_Page.class);
-                startActivity(intent);
-            }
-        }
+                                         @Override
+                                         public void onClick(View view) {
+                                             Intent intent = new Intent(Doctor_Booking_main.this,Doctor_Booking_Select_Page.class);
+                                             startActivity(intent);
+                                         }
+                                     }
+        );
+        button_d2.setOnClickListener(new View.OnClickListener() {
+                                         @Override
+                                         public void onClick(View view) {
+                                             Intent intent = new Intent(Doctor_Booking_main.this,doc_all_appointment.class);
+                                             startActivity(intent);
+                                         }
+                                     }
         );
     }
 }

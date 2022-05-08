@@ -7,144 +7,101 @@
     android:background="@drawable/healthbmi"
     tools:context=".HealthCare_MealList_Add">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="381dp"
-        android:layout_height="600dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.228"
-        app:srcCompat="@drawable/border" />
-
-    <TextView
-        android:id="@+id/add_morning"
-        android:layout_width="154dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="116dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/add_morning"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/add_editmorning"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="248dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="120dp"
         android:ems="10"
+        android:hint="Morning Meal"
         android:inputType="textPersonName"
-        android:text="@string/add_editmorning"
-        app:layout_constraintBottom_toBottomOf="@+id/add_morning"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/add_noon"
-        android:layout_width="154dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/add_noon"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_morning" />
+        app:layout_constraintTop_toBottomOf="@+id/add_morning"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/add_editnoon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="248dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="Noon Meal"
         android:inputType="textPersonName"
-        android:text="@string/add_editnoon"
-        app:layout_constraintBottom_toBottomOf="@+id/add_noon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_morning"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/add_night"
-        android:layout_width="154dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/add_night"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_noon" />
+        app:layout_constraintTop_toBottomOf="@+id/add_editmorning"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/add_editnight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_width="248dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="Night Meal"
         android:inputType="textPersonName"
-        android:text="@string/add_editnight"
-        app:layout_constraintBottom_toBottomOf="@+id/add_night"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_editnoon"
-        app:layout_constraintVertical_bias="0.929"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/add_day"
-        android:layout_width="154dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/add_day"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_night" />
+        app:layout_constraintTop_toBottomOf="@+id/add_editnoon"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/add_editday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_width="248dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="Extra Meal"
         android:inputType="textPersonName"
-        android:text="@string/add_editday"
-        app:layout_constraintBottom_toBottomOf="@+id/add_day"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_editnight"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btn_add_meal"
         android:layout_width="304dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/button_drawable"
-        android:text="@string/btn_add_meal"
-        android:textColor="@color/black"
+        android:text="Add Meal"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="266dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/list" />
+
+    <TextView
+        android:id="@+id/add_morning"
+        android:layout_width="213dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text=" Type         Here!!"
+        android:textColor="@color/purple_light"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

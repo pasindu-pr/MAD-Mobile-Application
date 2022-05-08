@@ -1,40 +1,124 @@
 package com.mobileapplicationdevelopment.dogvio;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
-import com.google.android.material.datepicker.MaterialStyledDatePickerDialog;
-
+import java.lang.reflect.GenericArrayType;
 import java.util.Calendar;
 import java.util.Locale;
 
 public class Doctor_Time_Picking_page extends AppCompatActivity {
+    private EditText DogCount;
+    private EditText userName;
     private DatePickerDialog datePickerDialog;
     private Button dateButton;
-    private Bundle savedInstanceState;
+    private Button timeButton;
+    private Button saveButton;
+    private String date ;
+    private String appointmentTime;
+    private String Drname;
+    private String dogcount;
+    private String dgcount;
+    private String Uname;
+    private String uname;
+    private Doc_DbHandler doc_dbHandler;
+    private Context context;
 
+
+    public void myToast(){
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.doc_custom_tost_a, (ViewGroup) findViewById(R.id.Doc_tost_a));
+        final Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM, 0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
+    }
+    public void redirect() {
+        Intent intent = new Intent(this,Doctor_Time_Picking_data_page.class);
+        intent.putExtra("date", date);
+        intent.putExtra("time", appointmentTime);
+        intent.putExtra("nDrName" ,Drname );
+        dgcount = DogCount.getText().toString();
+        Uname = userName.getText().toString();
+        intent.putExtra("dogCount" ,dgcount);
+        intent.putExtra("USerName" ,Uname);
+
+        if(Uname.isEmpty()){
+            userName.setError("User Name is Required");
+        }else if (dgcount.isEmpty()){
+            DogCount.setError("Dog Count is Required");
+        }else if(date.isEmpty()){
+            dateButton.setError("Date is Required");
+        }else if(appointmentTime.isEmpty()){
+            timeButton.setError("Time is Required");
+        }else {
+            dogcount = DogCount.getText().toString();
+            uname = userName.getText().toString();
+            Doctor_Appointment_Model_Class Doc_Model_class = new Doctor_Appointment_Model_Class(date, appointmentTime, Drname, dogcount, uname);
+            doc_dbHandler.addApointment(Doc_Model_class);
+
+            myToast();
+            startActivity(intent);
+
+        }
+    }
+
+    //On Crate method-------------------------------------------------------------------------------------------------------------------------
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_time_picking_page);
         initDatePicker();
+
+        DogCount = findViewById(R.id.doc_dog_counta1);
+        userName =  findViewById(R.id.doc_dog_user_name);
         dateButton = findViewById(R.id.datePickerButton);
         timeButton = findViewById(R.id.timeButton);
-        dateButton.setText(getTodaysDate());
-        setContentView(R.layout.activity_doctor_time_picking_page);
+        saveButton = findViewById(R.id.date_time_save_button);
+
+        context=this;
+        doc_dbHandler = new Doc_DbHandler(context);
+
+        //**********************************************************
+        Drname = getIntent().getStringExtra ("DrName");
+        TextView textVD = findViewById(R.id.Dr_Booked_Name);
+        textVD.setText(Drname);
+
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+               redirect();
+
+            }
+        });
+
 
         ActionBar DocActionBar6 = getSupportActionBar();
         DocActionBar6.setTitle("Place Appointment");
@@ -42,30 +126,22 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         DocActionBar6.setDisplayHomeAsUpEnabled(true);
     }
 
-
-
-
-    private String getTodaysDate()
+    //-----------------------------------------------------------------------------------------------------------------------------------
+    private Bundle initDatePicker()
     {
-        Calendar cal = Calendar.getInstance();
-        int year = cal.get(Calendar.YEAR);
-        int month = cal.get(Calendar.MONTH);
-        month = month + 1;
-        int day = cal.get(Calendar.DAY_OF_MONTH);
-        return makeDateString(day, month, year);
-    }
 
-    private void initDatePicker()
-    {
         DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener()
         {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day)
             {
                 month = month + 1;
-                String date = makeDateString(day, month, year);
+                date = makeDateString(day, month, year);
                 dateButton.setText(date);
+                //*********************************************************
+
             }
+
         };
 
         Calendar cal = Calendar.getInstance();
@@ -76,8 +152,9 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         int style = AlertDialog.THEME_HOLO_LIGHT;
 
         datePickerDialog = new DatePickerDialog(this, style, dateSetListener, year, month, day);
-        datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
+        datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
 
+        return null;
     }
 
     private String makeDateString(int day, int month, int year)
@@ -111,7 +188,6 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
             return "NOV";
         if(month == 12)
             return "DEC";
-
         //default should never happen
         return "JAN";
     }
@@ -127,7 +203,7 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
 
     //Time Button
 
-    Button timeButton;
+
     int hour, minute;
 
 
@@ -141,7 +217,8 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
             {
                 hour = selectedHour;
                 minute = selectedMinute;
-                timeButton.setText(String.format(Locale.getDefault(), "%02d:%02d",hour, minute));
+                appointmentTime = String.format(Locale.getDefault(), "%02d:%02d",hour, minute);
+                timeButton.setText(appointmentTime);
             }
         };
         TimePickerDialog timePickerDialog = new TimePickerDialog(this, /*style,*/ onTimeSetListener, hour, minute, true);
@@ -149,6 +226,5 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
         timePickerDialog.setTitle("Select Time");
         timePickerDialog.show();
     }
-
 
 }
