@@ -28,6 +28,37 @@
         <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/activity_doctor_time_picking_page.xml" value="0.18" />
         <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/daycare_homepage.xml" value="0.20416666666666666" />
         <entry key="..\:/2ndYear/Y2 S2/MAD-Mobile-Application/app/src/main/res/layout/doctor_delete_popup.xml" value="0.16" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable-v24/button_drawable.xml" value="0.153" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable-v24/doc_text_background_2.xml" value="0.153" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable/button_drawable.xml" value="0.11" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable/doc_background.xml" value="0.21" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable/doc_button1.xml" value="0.171" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable/doc_calender.xml" value="0.21" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable/doc_table_border.xml" value="0.165" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable/doc_text_back.xml" value="0.1" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable/doc_text_background_2.xml" value="0.1305" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable/doc_tost_background.xml" value="0.168" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/drawable/doc_tost_background_b.xml" value="0.1295" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/font/font_type_1.xml" value="0.18868720979316167" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/activity_delete_booking.xml" value="0.16631038905515177" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/activity_doc_all_appointment.xml" value="0.1675929884566054" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/activity_doctor_appoinment_payment.xml" value="0.20416666666666666" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/activity_doctor_booking_main.xml" value="0.18" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/activity_doctor_booking_select_page.xml" value="0.33" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/activity_doctor_delete_popup_msg.xml" value="0.16631038905515177" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/activity_doctor_edit_appontment.xml" value="0.33" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/activity_doctor_time_picking_data_page.xml" value="0.22" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/activity_doctor_time_picking_page.xml" value="0.25" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/activity_health_care_bmi.xml" value="0.16631038905515177" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/doc_all_appoi.xml" value="0.33" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/doc_all_appoin.xml" value="0.25" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/doc_custom_toast_b.xml" value="0.16631038905515177" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/doc_custom_tost_a.xml" value="0.33" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/doc_main_app_bar.xml" value="0.15476699444206926" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/layout/doc_single_appoi.xml" value="0.22" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1415" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/mipmap-anydpi-v26/ic_launcher_dog_round.xml" value="0.109" />
+        <entry key="..\:/2ndYear/Y2 S2/MAD_PROJECT_NEW/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.109" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/drawable/button_drawable.xml" value="0.2265" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/drawable/rouded_input.xml" value="0.1" />
         <entry key="..\:/Android/MAD-Mobile-Application/app/src/main/res/drawable/rouded_ractangle_background.xml" value="0.1" />

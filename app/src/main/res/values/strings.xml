@@ -141,6 +141,10 @@
     <string name="doc_page4_text4a">1</string>
     <string name="docpaymentbtna">PAY</string>
     <string name="docpayment">700</string>
+    <string name="doc_date">SELECT DATE</string>
+    <string name="User_Name">User Name  :-</string>
+    <string name="doc_user">User Name :-</string>
+    <string name="doc_dete">Doctor Name ,</string>
     />
 
     <!--    Social Part Strings  -->
@@ -242,6 +246,7 @@ edit or remove your puppy
     <string name="et_weight">et_weight</string>
     <string name="rd_btn_male">rd_btn_male</string>
     <string name="rd_btn_female">rd_btn_female</string>
+    <string name="Doc_Visitor">Visitor Name :-</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

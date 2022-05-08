@@ -2,17 +2,12 @@ package com.mobileapplicationdevelopment.dogvio;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -26,104 +21,96 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import java.lang.reflect.GenericArrayType;
+import java.nio.charset.StandardCharsets;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class Doctor_Time_Picking_page extends AppCompatActivity {
+
+
+
+public class Doctor_Edit_Appontment extends AppCompatActivity {
+
     private EditText DogCount;
-    private EditText userName;
     private DatePickerDialog datePickerDialog;
     private Button dateButton;
     private Button timeButton;
-    private Button saveButton;
+    private Button editButton;
     private String date ;
+    private EditText userName;
+    private TextView docName;
     private String appointmentTime;
-    private String Drname;
-    private String dogcount;
-    private String dgcount;
-    private String Uname;
-    private String uname;
-    private Doc_DbHandler doc_dbHandler;
+    private Doc_DbHandler doc_dbHandler1;
     private Context context;
+    private String dateTxt;
+    private String timeTxt;
+    private String docTxt;
+    private String  userNametxt;
+    private String dogCountTxt;
 
 
     public void myToast(){
+
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.doc_custom_tost_a, (ViewGroup) findViewById(R.id.Doc_tost_a));
+
+
+                TextView toastTxt = layout.findViewById(R.id.toast_text);
+                toastTxt.setText("Changes Saved");
+
         final Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.BOTTOM, 0, 0);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
         toast.show();
     }
-    public void redirect() {
-        Intent intent = new Intent(this,Doctor_Time_Picking_data_page.class);
-        intent.putExtra("date", date);
-        intent.putExtra("time", appointmentTime);
-        intent.putExtra("nDrName" ,Drname );
-        dgcount = DogCount.getText().toString();
-        Uname = userName.getText().toString();
-        intent.putExtra("dogCount" ,dgcount);
-        intent.putExtra("USerName" ,Uname);
-
-        if(Uname.isEmpty()){
-            userName.setError("User Name is Required");
-        }else if (dgcount.isEmpty()){
-            DogCount.setError("Dog Count is Required");
-        }else if(date.isEmpty()){
-            dateButton.setError("Date is Required");
-        }else if(appointmentTime.isEmpty()){
-            timeButton.setError("Time is Required");
-        }else {
-            dogcount = DogCount.getText().toString();
-            uname = userName.getText().toString();
-            Doctor_Appointment_Model_Class Doc_Model_class = new Doctor_Appointment_Model_Class(date, appointmentTime, Drname, dogcount, uname);
-            doc_dbHandler.addApointment(Doc_Model_class);
-
-            myToast();
-            startActivity(intent);
-
-        }
-    }
 
     //On Crate method-------------------------------------------------------------------------------------------------------------------------
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctor_time_picking_page);
+        setContentView(R.layout.activity_doctor_edit_appontment);
         initDatePicker();
 
-        DogCount = findViewById(R.id.doc_dog_counta1);
-        userName =  findViewById(R.id.doc_dog_user_name);
-        dateButton = findViewById(R.id.datePickerButton);
-        timeButton = findViewById(R.id.timeButton);
-        saveButton = findViewById(R.id.date_time_save_button);
+        context = this;
+        doc_dbHandler1 = new Doc_DbHandler(context);
 
-        context=this;
-        doc_dbHandler = new Doc_DbHandler(context);
+        DogCount = (EditText)findViewById(R.id.doc_dog_counta1_Edit);
+        dateButton = findViewById(R.id.datePickerButton_Edit);
+        timeButton = findViewById(R.id.timeButton_Edit);
+        editButton = findViewById(R.id.date_time_save_button_Edit);
+        userName = findViewById(R.id.doc_dog_user_name_Edit);
+        docName = findViewById(R.id.Dr_Booked_Name_Edit);
 
-        //**********************************************************
-        Drname = getIntent().getStringExtra ("DrName");
-        TextView textVD = findViewById(R.id.Dr_Booked_Name);
-        textVD.setText(Drname);
+        final String id = getIntent().getStringExtra("id");
+        Doctor_Appointment_Model_Class Doc_Appoint =  doc_dbHandler1.getSingleAppointment(Integer.parseInt(id));
+        DogCount.setText(Doc_Appoint.getDogCount());
+        dateButton.setText(Doc_Appoint.getDate());
+        timeButton.setText(Doc_Appoint.getTime());
+        userName.setText(Doc_Appoint.getUserName());
+        docName.setText(Doc_Appoint.getDrName());
 
-        saveButton.setOnClickListener(new View.OnClickListener() {
+        editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-               redirect();
+                    timeTxt = timeButton.getText().toString();
+                    dateTxt = dateButton.getText().toString();
+                    docTxt = docName.getText().toString();
+                    userNametxt = userName.getText().toString();
+                    dogCountTxt = DogCount.getText().toString();
+                    Doctor_Appointment_Model_Class doc_Appoit_Model = new Doctor_Appointment_Model_Class(Integer.parseInt(id), dateTxt, timeTxt, docTxt, dogCountTxt, userNametxt);
+                    int state = doc_dbHandler1.updateAppointment(doc_Appoit_Model);
+                    myToast();
+                    startActivity(new Intent(context, doc_all_appointment.class));
+                }
 
-            }
         });
 
-
-        ActionBar DocActionBar6 = getSupportActionBar();
-        DocActionBar6.setTitle("Place Appointment");
-        DocActionBar6.setDisplayShowHomeEnabled(true);
-        DocActionBar6.setDisplayHomeAsUpEnabled(true);
+        ActionBar DocActionBar7 = getSupportActionBar();
+        DocActionBar7.setTitle("Edit Appointment");
+        DocActionBar7.setDisplayShowHomeEnabled(true);
+        DocActionBar7.setDisplayHomeAsUpEnabled(true);
     }
 
     //-----------------------------------------------------------------------------------------------------------------------------------
@@ -139,9 +126,7 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
                 date = makeDateString(day, month, year);
                 dateButton.setText(date);
                 //*********************************************************
-
             }
-
         };
 
         Calendar cal = Calendar.getInstance();
@@ -199,10 +184,7 @@ public class Doctor_Time_Picking_page extends AppCompatActivity {
     }
 
 
-
-
     //Time Button
-
 
     int hour, minute;
 
