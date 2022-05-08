@@ -26,6 +26,7 @@ public class SocialUserDogListAdapter extends RecyclerView
 
     private Context ct;
     private ArrayList<SocialDog> socialUserDogs;
+    DAOSocialDog daoSocialDog = new DAOSocialDog();
 
     public SocialUserDogListAdapter(Context ct, ArrayList<SocialDog> socialUserDogs) {
         this.ct = ct;
@@ -40,7 +41,26 @@ public class SocialUserDogListAdapter extends RecyclerView
         ct.startActivity(intent);
     }
 
+    public void deleteDog(int id){
+        daoSocialDog.getDatabaseReference().orderByChild("id").equalTo(id)
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+                    {
+                        for (DataSnapshot ds : dataSnapshot.getChildren())
+                        {
+                            ds.getRef().removeValue();
+                            Toast.makeText(ct, "Deleted", Toast.LENGTH_SHORT).show();
+                        }
+                    }
 
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError)
+                    {
+                        Toast.makeText(ct, "Failed to delete", Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
 
     @NonNull
     @Override
@@ -67,8 +87,15 @@ public class SocialUserDogListAdapter extends RecyclerView
             }
         });
 
-
-
+        
+        holder.socialUserDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(ct, "Clicked", Toast.LENGTH_SHORT).show();
+                int dogid = socialUserDogs.get(holder.getAdapterPosition()).getId();
+                deleteDog(dogid);
+            }
+        });
 
     }
 
@@ -91,7 +118,6 @@ public class SocialUserDogListAdapter extends RecyclerView
             socialUserDelete = itemView.findViewById(R.id.socialUserDelete);
             socialUserEdit = itemView.findViewById(R.id.socialUserEdit);
         }
-
     }
 
 
