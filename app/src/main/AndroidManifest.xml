@@ -21,9 +21,12 @@
             android:exported="false" />
         <activity
             android:name=".Calculator"
-            android:name=".HealthCareMealList"
-            android:name=".Doctor_Edit_Appontment"
             android:exported="false" />
+        <activity
+            android:name=".HealthCareMealList"
+            android:exported="false" />
+        <activity android:name=".Doctor_Edit_Appontment"
+            android:exported="false"/>
         <activity
             android:name=".doc_all_appointment"
             android:exported="false" />

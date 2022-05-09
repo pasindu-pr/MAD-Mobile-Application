@@ -32,7 +32,7 @@ public class Calculator extends AppCompatActivity {
         actionBar9.setDisplayShowHomeEnabled(true);
         actionBar9.setDisplayHomeAsUpEnabled(true);
 
-        button1 = findViewById(R.id.button12);
+       // button1 = findViewById(R.id.button12);
         cal_buttonPack = findViewById(R.id.cal_buttonPack);
         ed_Hours  = findViewById(R.id.ed_Hours);
         ed_dates = findViewById(R.id.ed_dates);
